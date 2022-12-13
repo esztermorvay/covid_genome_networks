@@ -8,6 +8,7 @@ import networkx as nx
 
 """
 https://biopython.org/docs/1.75/api/Bio.pairwise2.html
+creates raw gml file without normalization
 """
 
 zips_dir = "genomes"

@@ -1,9 +1,8 @@
 import json
 import os
-
-util_dir = "util_files"
+import util
 web_scraping_dir = "genomes"
-lineages_file = os.path.join(os.getcwd(), util_dir, "lineage_data.full.json")
+lineages_file = os.path.join(os.getcwd(), util.util_dir, "lineage_data.full.json")
 
 
 

@@ -2,6 +2,8 @@ import os
 import random
 import zipfile
 
+util_dir = "util_files"
+
 
 def get_all_files_in_dir_as_list(dir):
     # get all the files in the directory
