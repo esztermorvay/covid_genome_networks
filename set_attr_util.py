@@ -11,12 +11,44 @@ from collections import Counter
 import scipy.stats as stats
 import statistics
 import os
+import community as community_louvain
 #TODO orc
 #TODO forman
 #TODO nfd
 #TODO fdc
 #TODO community detection
 
+def set_orc(graph):
+    """
+    set the orc of each node in the graph
+    :param graph:
+    :return:
+
+    """
+    # get the orc of each node
+    orc = OllivierRicci(graph, alpha=0.5, verbose="TRACE")
+    orc.compute_ricci_curvature()
+    orc_dict = orc.get_ricci_curvature()
+    nx.set_node_attributes(graph, orc_dict, 'orc')
+    return graph
+
+def set_forman(graph):
+    """
+    set the forman of each node in the graph
+    :param graph:
+    :return:
+    """
+    # get the forman of each node
+    forman = FormanRicci(graph)
+    forman.compute_ricci_curvature()
+    # forman_dict = forman.get_ricci_curvature()
+    G = forman.G
+    return G
+
+def set_cluster_coeffs(graph):
+    cluster_coeffs = nx.clustering(graph, weight="weight")
+    nx.set_node_attributes(graph, cluster_coeffs, 'cluster_coeff')
+    return graph
 
 def set_betweenness_centralities(graph):
     """
@@ -46,9 +78,10 @@ def set_distances(g):
     return g
 
 def set_inverse_weights(g):
+    g2 = g.copy()
     for edge in g.edges:
-        g.edges[edge]['inverse_weight'] = 1 - g.edges[edge]['weight']
-    return g
+        g2.edges[edge]['weight'] = 1 - g2.edges[edge]['weight']
+    return g2
 
 def set_degree_centrality(g):
     degree_centrality = nx.degree_centrality(g)
@@ -143,5 +176,12 @@ def FDC(G, weight=None):
 def thresholding(g, threshold):
     for edge in g.edges:
         if g.edges[edge]['weight'] < threshold:
+            g.remove_edge(edge[0], edge[1])
+    return g
+
+def thresholding_low(g, upper_bound):
+    """only keep edges lower than a certain threshold"""
+    for edge in g.edges:
+        if g.edges[edge]['weight'] > upper_bound:
             g.remove_edge(edge[0], edge[1])
     return g

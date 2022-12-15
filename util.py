@@ -3,7 +3,7 @@ import random
 import zipfile
 
 util_dir = "util_files"
-
+graphs_dir = "graphs/"
 
 def get_all_files_in_dir_as_list(dir):
     # get all the files in the directory

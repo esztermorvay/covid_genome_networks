@@ -3,6 +3,8 @@ import sys
 import networkx as nx
 import util
 import pandas as pd
+
+from graph_visualizer import draw_graph
 from set_attr_util import *
 # TODO normalize
 # TODO invert
@@ -46,7 +48,7 @@ def normalize_edges(graph):
             min_weight = graph.edges[edge]['weight']
     # normalize the weights
     for edge in graph.edges:
-        graph.edges[edge]['weight'] = (graph.edges[edge]['weight'] - min_weight) / (max_weight - min_weight)
+        graph.edges[edge]['weight'] = (graph.edges[edge]['weight'] - min_weight  +1 ) / (max_weight - min_weight + 1)
 
 
 
@@ -91,17 +93,42 @@ def main():
     graph = nx.read_gml(graph_name)
     pango_to_name = get_vars_of_concern(util.util_dir + "/variants_of_concern.csv")
     add_variant_of_concern(graph, pango_to_name)
-    nx.write_gml(graph, "graph_with_voc.gml")
+    nx.write_gml(graph, "gml_files/graph_with_voc.gml")
     normalize_edges(graph)
     normalize_counts(graph)
     set_distances(graph)
     set_degree_centrality(graph)
     set_closeness_centrality(graph)
-    nx.write_gml(graph, "graph_with_voc_normalized.gml")
-    thresholding(graph, 0.9)
+    nx.write_gml(graph, "gml_files/graph_with_voc_normalized.gml")
+    # thresholding(graph, 0.9)
     set_betweenness_centralities(graph)
+    set_current_flow_betweenness_centrality(graph)
+    node_dimension(graph, weight="weight")
+    FDC(graph, weight="weight")
+    # count the number of edges with weight 0
+    count = 0
+    for edge in graph.edges:
+        if graph.edges[edge]['weight'] == 0:
+            print(edge, graph.edges[edge])
+            count += 1
+    print(count)
+    graph = set_forman(graph)
+    set_cluster_coeffs(graph)
+    #TODO community detection
+    # set_orc(graph) FIXME ORC must be done on mac bc fork() method doesn't work on windows
+    nx.write_gml(graph, "gml_files/graph_with_voc_normalized_attrs.gml")
     print("edges:", len(graph.edges))
     print('done')
+    # thresholding(graph, 0.9)
+    graph2 = set_inverse_weights(graph)
+    threshold_values = [.01, .03, .05, .1, 1]
+    for threshold in threshold_values:
+        thresholding_low(graph2, threshold)
+        # do community detection here
+
+        nx.write_gml(graph2, "gml_files/graph_inversed_thresholded" + str(threshold) + ".gml")
+
+        draw_graph(graph2)
 
 if __name__ == "__main__":
     main()

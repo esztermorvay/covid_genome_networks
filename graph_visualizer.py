@@ -1,0 +1,19 @@
+import networkx as nx
+from sklearn import preprocessing
+import matplotlib.pyplot as plt
+def draw_graph(G, clustering_label="variant"):
+    """
+    A helper function to draw a nx graph with community.
+    """
+    complex_list = nx.get_node_attributes(G, clustering_label)
+
+    le = preprocessing.LabelEncoder()
+    node_color = le.fit_transform(list(complex_list.values()))
+
+    nx.draw_spring(G,nodelist=G.nodes(),
+                   node_color=node_color,
+                   cmap=plt.cm.rainbow,
+                   alpha=0.8)
+    plt.legend()
+    plt.show()
+

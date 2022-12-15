@@ -50,6 +50,12 @@ def remove_empty_files(file_names, dir):
 
 
 def main():
+    # testing
+    util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.13.1.zip", "temp1")
+    util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.1.15.zip", "temp2")
+
+    se1 = get_longest_sequence_from_fasta("temp1/ncbi_dataset/data/genomic.fna")
+    se2 = get_longest_sequence_from_fasta("temp2/ncbi_dataset/data/genomic.fna")
     G = nx.Graph()
     # this is a list of all the different genome zip files
     file_names = util.get_all_files_in_dir_as_list("genomes")[3:]
