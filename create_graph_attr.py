@@ -115,7 +115,8 @@ def main():
     graph = set_forman(graph)
     set_cluster_coeffs(graph)
     #TODO community detection
-    # set_orc(graph) FIXME ORC must be done on mac bc fork() method doesn't work on windows
+    graph = set_orc(graph)
+    # FIXME ORC must be done on mac bc fork() method doesn't work on windows
     nx.write_gml(graph, "gml_files/graph_with_voc_normalized_attrs.gml")
     print("edges:", len(graph.edges))
     print('done')
@@ -125,10 +126,11 @@ def main():
     for threshold in threshold_values:
         thresholding_low(graph2, threshold)
         # do community detection here
+        graph2 = set_orc(graph2, "orc_inversed")
 
         nx.write_gml(graph2, "gml_files/graph_inversed_thresholded" + str(threshold) + ".gml")
 
-        draw_graph(graph2)
+        draw_graph(graph2, "graph_inversed_thresholded" + str(threshold), "variant_of_concern")
 
 if __name__ == "__main__":
     main()

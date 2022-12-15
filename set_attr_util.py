@@ -18,7 +18,7 @@ import community as community_louvain
 #TODO fdc
 #TODO community detection
 
-def set_orc(graph):
+def set_orc(graph, name="orc"):
     """
     set the orc of each node in the graph
     :param graph:
@@ -28,9 +28,9 @@ def set_orc(graph):
     # get the orc of each node
     orc = OllivierRicci(graph, alpha=0.5, verbose="TRACE")
     orc.compute_ricci_curvature()
-    orc_dict = orc.get_ricci_curvature()
-    nx.set_node_attributes(graph, orc_dict, 'orc')
-    return graph
+    # orc_dict = orc.get_ricci_curvature()
+    # nx.set_node_attributes(graph, orc_dict, name)
+    return orc.G.copy()
 
 def set_forman(graph):
     """

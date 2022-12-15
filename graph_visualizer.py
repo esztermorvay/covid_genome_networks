@@ -1,7 +1,7 @@
 import networkx as nx
 from sklearn import preprocessing
 import matplotlib.pyplot as plt
-def draw_graph(G, clustering_label="variant"):
+def draw_graph(G, save_name, clustering_label="variant"):
     """
     A helper function to draw a nx graph with community.
     """
@@ -15,5 +15,6 @@ def draw_graph(G, clustering_label="variant"):
                    cmap=plt.cm.rainbow,
                    alpha=0.8)
     plt.legend()
+    plt.savefig("graphs/" + save_name + ".png")
     plt.show()
 

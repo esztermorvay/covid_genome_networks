@@ -10,12 +10,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 5.453496764880263
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.020048071683486962
+    current_flow_betweenness_centrality 0.020048071683486914
     nfd 3.9182211207881186
     fdc 1.0015843759996739
     weight 1.0
     formanCurvature 35.60206654589486
-    cluster_coeff 0.8042679944606619
+    cluster_coeff 0.8042679944606617
+    ricciCurvature 0.9348924950048767
   ]
   node [
     id 1
@@ -28,12 +29,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.734838026872813
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021751253306875825
+    current_flow_betweenness_centrality 0.021751253306875818
     nfd 3.531187048198906
     fdc 0.9026498676769514
     weight 1.0
     formanCurvature 42.704275206630044
-    cluster_coeff 0.8544500844776688
+    cluster_coeff 0.8544500844776692
+    ricciCurvature 0.9395910513517567
   ]
   node [
     id 2
@@ -46,12 +48,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.275018820272468
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021907210163243474
-    nfd 3.8684635431657615
-    fdc 0.9888652336139273
+    current_flow_betweenness_centrality 0.02190721016324344
+    nfd 3.8684635431657597
+    fdc 0.9888652336139269
     weight 1.0
     formanCurvature 43.186434087805814
-    cluster_coeff 0.8579193064265915
+    cluster_coeff 0.857919306426592
+    ricciCurvature 0.3112599658802405
   ]
   node [
     id 3
@@ -64,12 +67,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.589788512076087
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021968875297762286
-    nfd 3.890899332572262
-    fdc 0.994600319878852
+    current_flow_betweenness_centrality 0.021968875297762303
+    nfd 3.890899332572261
+    fdc 0.9946003198788518
     weight 1.0
     formanCurvature 43.43964594353535
-    cluster_coeff 0.8595266609293606
+    cluster_coeff 0.85952666092936
+    ricciCurvature 0.2578926706366889
   ]
   node [
     id 4
@@ -82,12 +86,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.766746687595216
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021784797383008276
-    nfd 3.7009031403045496
-    fdc 0.9460330716791143
+    current_flow_betweenness_centrality 0.02178479738300823
+    nfd 3.7009031403045505
+    fdc 0.9460330716791145
     weight 1.0
     formanCurvature 42.75987337550633
-    cluster_coeff 0.8545670775131518
+    cluster_coeff 0.8545670775131516
+    ricciCurvature 0.5433805594996277
   ]
   node [
     id 5
@@ -100,12 +105,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.449348019361851
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.022223061177499226
-    nfd 5.044393234654808
-    fdc 1.2894589903115181
+    current_flow_betweenness_centrality 0.022223061177499167
+    nfd 5.044393234654806
+    fdc 1.2894589903115177
     weight 1.0
     formanCurvature 43.24993493229185
     cluster_coeff 0.8595489814972748
+    ricciCurvature 0.5833330612765867
   ]
   node [
     id 6
@@ -118,12 +124,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.254847309743091
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021889076534723297
-    nfd 3.8452894573902183
-    fdc 0.9829414223931374
+    current_flow_betweenness_centrality 0.02188907653472332
+    nfd 3.8452894573902157
+    fdc 0.9829414223931368
     weight 1.0
     formanCurvature 43.16511816649561
-    cluster_coeff 0.8577071100598744
+    cluster_coeff 0.8577071100598749
+    ricciCurvature 0.3983464920221439
   ]
   node [
     id 7
@@ -136,12 +143,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.4550284161107
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021933108520267093
-    nfd 3.7905894859860387
-    fdc 0.9689588943435119
+    current_flow_betweenness_centrality 0.021933108520266992
+    nfd 3.7905894859860414
+    fdc 0.9689588943435126
     weight 1.0
     formanCurvature 43.34080356910639
     cluster_coeff 0.8587927518824103
+    ricciCurvature 0.30497442451009804
   ]
   node [
     id 8
@@ -154,12 +162,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 1.0469282368631374
     betweenness_centrality 0.9812925170068026
-    current_flow_betweenness_centrality 0.003076419914822397
-    nfd 0.5063892286845741
-    fdc 0.12944433812938508
+    current_flow_betweenness_centrality 0.003076419914822545
+    nfd 0.5063892286845744
+    fdc 0.12944433812938513
     weight 1.0
     formanCurvature 2.2378157712081634
-    cluster_coeff 0.10157240780270921
+    cluster_coeff 0.10157240780270925
+    ricciCurvature -0.41208718062471345
   ]
   node [
     id 9
@@ -172,12 +181,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.643866526872408
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02174963052958304
-    nfd 3.6540067692869473
-    fdc 0.9340453172736493
+    current_flow_betweenness_centrality 0.02174963052958308
+    nfd 3.65400676928695
+    fdc 0.9340453172736499
     weight 1.0
     formanCurvature 42.641751060723216
-    cluster_coeff 0.8537467797463146
+    cluster_coeff 0.853746779746315
+    ricciCurvature 0.13251985364048735
   ]
   node [
     id 10
@@ -190,12 +200,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.730808150499058
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021775088285164054
-    nfd 3.6784713094009707
-    fdc 0.9402989972954889
+    current_flow_betweenness_centrality 0.021775088285163977
+    nfd 3.6784713094009693
+    fdc 0.9402989972954886
     weight 1.0
     formanCurvature 42.725963254263604
-    cluster_coeff 0.8543160705640908
+    cluster_coeff 0.8543160705640906
+    ricciCurvature 0.5468762655658264
   ]
   node [
     id 11
@@ -208,12 +219,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.936475506082383
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021872566078282252
-    nfd 4.054649372767888
-    fdc 1.0364584684552827
+    current_flow_betweenness_centrality 0.02187256607828219
+    nfd 4.054649372767887
+    fdc 1.0364584684552824
     weight 1.0
     formanCurvature 42.89292391381781
-    cluster_coeff 0.855884783969117
+    cluster_coeff 0.8558847839691169
+    ricciCurvature 0.9368532720015541
   ]
   node [
     id 12
@@ -226,12 +238,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 8.272043010752691
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02152781843824757
-    nfd 3.8115033867565695
-    fdc 0.9743049520587942
+    current_flow_betweenness_centrality 0.02152781843824766
+    nfd 3.811503386756569
+    fdc 0.9743049520587941
     weight 1.0
     formanCurvature 40.962960624000225
-    cluster_coeff 0.8434993891564829
+    cluster_coeff 0.8434993891564826
+    ricciCurvature 0.9380857338707999
   ]
   node [
     id 13
@@ -244,12 +257,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.163459921692969
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021875895939739688
-    nfd 3.890899332572262
-    fdc 0.994600319878852
+    current_flow_betweenness_centrality 0.021875895939739754
+    nfd 3.890899332572261
+    fdc 0.9946003198788518
     weight 1.0
     formanCurvature 43.090585159269125
-    cluster_coeff 0.8572524092963062
+    cluster_coeff 0.8572524092963061
+    ricciCurvature 0.37728385484822324
   ]
   node [
     id 14
@@ -262,12 +276,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.81773673341532
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021799584805776685
-    nfd 3.758888922021345
-    fdc 0.9608555258508656
+    current_flow_betweenness_centrality 0.021799584805776713
+    nfd 3.7588889220213444
+    fdc 0.9608555258508655
     weight 1.0
     formanCurvature 42.80391643412934
     cluster_coeff 0.8549301499201558
+    ricciCurvature 0.03683472976255475
   ]
   node [
     id 15
@@ -280,12 +295,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 6.676160121179606
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.020729456996177318
-    nfd 0.5058811100634919
-    fdc 0.12931445172013412
+    current_flow_betweenness_centrality 0.020729456996177342
+    nfd 0.505881110063492
+    fdc 0.12931445172013414
     weight 1.0
     formanCurvature 38.50665895901342
-    cluster_coeff 0.8225191474315969
+    cluster_coeff 0.8225191474315972
+    ricciCurvature 0.16680500043166513
   ]
   node [
     id 16
@@ -298,12 +314,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.555444680054885
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.022265835283460288
-    nfd 5.138798947689163
-    fdc 1.3135911881292104
+    current_flow_betweenness_centrality 0.02226583528346044
+    nfd 5.138798947689162
+    fdc 1.3135911881292102
     weight 1.0
     formanCurvature 43.33391854239356
-    cluster_coeff 0.8601709450416005
+    cluster_coeff 0.8601709450416006
+    ricciCurvature 0.5833327813848291
   ]
   node [
     id 17
@@ -316,12 +333,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.991145009327257
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021814844527970844
-    nfd 3.5572524183545715
-    fdc 0.9093127554256939
+    current_flow_betweenness_centrality 0.021814844527970827
+    nfd 3.5572524183545697
+    fdc 0.9093127554256935
     weight 1.0
     formanCurvature 42.94913310557749
-    cluster_coeff 0.8560655073675782
+    cluster_coeff 0.8560655073675786
+    ricciCurvature 0.31628985259714293
   ]
   node [
     id 18
@@ -334,12 +352,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.589788512076087
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02197762750196984
+    current_flow_betweenness_centrality 0.021977627501969823
     nfd 3.9182211207881186
     fdc 1.0015843759996739
     weight 1.0
     formanCurvature 43.46113337796652
-    cluster_coeff 0.8596862424366403
+    cluster_coeff 0.8596862424366405
+    ricciCurvature 0.11721033966307592
   ]
   node [
     id 19
@@ -352,12 +371,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 2.7677368290225943
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.016244972847307214
-    nfd 4.9709166848904855
-    fdc 1.2706767516430928
+    current_flow_betweenness_centrality 0.016244972847307027
+    nfd 4.970916684890486
+    fdc 1.270676751643093
     weight 1.0
     formanCurvature 22.437380392989464
-    cluster_coeff 0.6858549346541091
+    cluster_coeff 0.6858549346541092
+    ricciCurvature 0.9152608907479272
   ]
   node [
     id 20
@@ -370,12 +390,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.764943457189014
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.022051196408064088
+    current_flow_betweenness_centrality 0.022051196408064085
     nfd 5.075869657502064
     fdc 1.2975050633544376
     weight 1.0
     formanCurvature 42.65480475291203
     cluster_coeff 0.8553265444883069
+    ricciCurvature 0.9322441978346517
   ]
   node [
     id 21
@@ -388,12 +409,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.896963884730539
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021818912605168148
-    nfd 3.904626831773922
-    fdc 0.9981093736810951
+    current_flow_betweenness_centrality 0.021818912605168165
+    nfd 3.904626831773923
+    fdc 0.9981093736810953
     weight 1.0
     formanCurvature 42.8416370895099
-    cluster_coeff 0.8556381481443132
+    cluster_coeff 0.8556381481443128
+    ricciCurvature 0.9380264925700369
   ]
   node [
     id 22
@@ -406,12 +428,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.856846666356054
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02180845015783854
-    nfd 3.7342940240262155
-    fdc 0.954568523458241
+    current_flow_betweenness_centrality 0.021808450157838655
+    nfd 3.734294024026215
+    fdc 0.9545685234582408
     weight 1.0
     formanCurvature 42.84254940005339
-    cluster_coeff 0.8551665239897205
+    cluster_coeff 0.8551665239897203
+    ricciCurvature 0.26183207702171507
   ]
   node [
     id 23
@@ -424,12 +447,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.122789995687796
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02159526188581829
-    nfd 3.622073249138932
-    fdc 0.9258824000045774
+    current_flow_betweenness_centrality 0.02159526188581833
+    nfd 3.622073249138933
+    fdc 0.9258824000045777
     weight 1.0
     formanCurvature 42.09700745554788
-    cluster_coeff 0.8500956093512784
+    cluster_coeff 0.8500956093512783
+    ricciCurvature 0.9385757970611907
   ]
   node [
     id 24
@@ -442,12 +466,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.994921219852126
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.0218214904197253
-    nfd 3.753847095297501
-    fdc 0.9595667229177417
+    current_flow_betweenness_centrality 0.021821490419725403
+    nfd 3.753847095297499
+    fdc 0.9595667229177413
     weight 1.0
     formanCurvature 42.947793450813464
-    cluster_coeff 0.8561662022108586
+    cluster_coeff 0.8561662022108585
+    ricciCurvature 0.3312299896669207
   ]
   node [
     id 25
@@ -460,12 +485,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 8.950836665185845
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021744288843729025
+    current_flow_betweenness_centrality 0.02174428884372908
     nfd 4.865870232338071
     fdc 1.2438245443818734
     weight 1.0
     formanCurvature 41.83513845040466
     cluster_coeff 0.8493763079076141
+    ricciCurvature 0.9327821849588457
   ]
   node [
     id 26
@@ -478,12 +504,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.703582240161454
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021766571863066873
-    nfd 3.622073249138932
-    fdc 0.9258824000045774
+    current_flow_betweenness_centrality 0.021766571863066787
+    nfd 3.622073249138933
+    fdc 0.9258824000045777
     weight 1.0
     formanCurvature 42.70136074479622
-    cluster_coeff 0.8541294345057702
+    cluster_coeff 0.85412943450577
+    ricciCurvature 0.5493759092175097
   ]
   node [
     id 27
@@ -496,12 +523,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.368178588056558
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021922917248714046
-    nfd 3.904626831773922
-    fdc 0.9981093736810951
+    current_flow_betweenness_centrality 0.02192291724871407
+    nfd 3.904626831773923
+    fdc 0.9981093736810953
     weight 1.0
     formanCurvature 43.27289408199197
-    cluster_coeff 0.8584417872151267
+    cluster_coeff 0.8584417872151262
+    ricciCurvature 0.43215852263282306
   ]
   node [
     id 28
@@ -514,12 +542,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 3.192381110465599
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02054074978582896
-    nfd 12.648694654119627
-    fdc 3.2332873903269155
+    current_flow_betweenness_centrality 0.0205407497858289
+    nfd 12.64869465411964
+    fdc 3.2332873903269186
     weight 1.0
     formanCurvature 25.37744960216306
     cluster_coeff 0.7200092264270367
+    ricciCurvature 0.8224265330865217
   ]
   node [
     id 29
@@ -532,12 +561,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 7.570224719101124
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02122270757281822
-    nfd 3.753847095297501
-    fdc 0.9595667229177417
+    current_flow_betweenness_centrality 0.02122270757281835
+    nfd 3.753847095297499
+    fdc 0.9595667229177413
     weight 1.0
     formanCurvature 39.96524989417795
-    cluster_coeff 0.8367174794738205
+    cluster_coeff 0.8367174794738207
+    ricciCurvature 0.9383777325702862
   ]
   node [
     id 30
@@ -550,12 +580,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.445478559261362
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021936526356544923
-    nfd 3.8452894573902183
-    fdc 0.9829414223931374
+    current_flow_betweenness_centrality 0.021936526356544948
+    nfd 3.8452894573902157
+    fdc 0.9829414223931368
     weight 1.0
     formanCurvature 43.342945098619616
-    cluster_coeff 0.8588283436116307
+    cluster_coeff 0.8588283436116311
+    ricciCurvature 0.3478583961912306
   ]
   node [
     id 31
@@ -568,12 +599,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.454511761217635
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02222993696814637
+    current_flow_betweenness_centrality 0.02222993696814651
     nfd 5.08636003566169
     fdc 1.3001866370939248
     weight 1.0
     formanCurvature 43.25284685854295
-    cluster_coeff 0.8595765353347471
+    cluster_coeff 0.8595765353347468
+    ricciCurvature 0.5833330549313241
   ]
   node [
     id 32
@@ -586,12 +618,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.200949901152418
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021866608125495936
-    nfd 3.6647130691013423
-    fdc 0.9367820853855799
+    current_flow_betweenness_centrality 0.021866608125495984
+    nfd 3.6647130691013428
+    fdc 0.93678208538558
     weight 1.0
     formanCurvature 43.1411096008571
-    cluster_coeff 0.8573480881542433
+    cluster_coeff 0.8573480881542432
+    ricciCurvature 0.39627190979873594
   ]
   node [
     id 33
@@ -609,7 +642,8 @@ graph [
     fdc 1.2975050633544376
     weight 1.0
     formanCurvature 43.224915168383916
-    cluster_coeff 0.8593974638712064
+    cluster_coeff 0.8593974638712063
+    ricciCurvature 0.5833330072230654
   ]
   node [
     id 34
@@ -622,12 +656,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 8.257997150496712
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021372540675263254
-    nfd 3.2045759731736077
-    fdc 0.819160820048114
+    current_flow_betweenness_centrality 0.021372540675263264
+    nfd 3.204575973173609
+    fdc 0.8191608200481144
     weight 1.0
     formanCurvature 41.017363035716
     cluster_coeff 0.8431083649031057
+    ricciCurvature 0.9405561097740174
   ]
   node [
     id 35
@@ -640,12 +675,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.398245312231207
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021931213871266172
+    current_flow_betweenness_centrality 0.021931213871266175
     nfd 3.9182211207881186
     fdc 1.0015843759996739
     weight 1.0
     formanCurvature 43.29738560388016
-    cluster_coeff 0.8586208600987245
+    cluster_coeff 0.8586208600987242
+    ricciCurvature 0.42670250382676106
   ]
   node [
     id 36
@@ -659,11 +695,12 @@ graph [
     closeness_centrality 2.757689124101388
     betweenness_centrality 0.0
     current_flow_betweenness_centrality 0.016540242356957866
-    nfd 5.811757140473043
-    fdc 1.4856142544174489
+    nfd 5.811757140473047
+    fdc 1.48561425441745
     weight 1.0
     formanCurvature 22.3641015664278
-    cluster_coeff 0.6839384665448064
+    cluster_coeff 0.683938466544806
+    ricciCurvature 0.9073149493092806
   ]
   node [
     id 37
@@ -676,12 +713,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.525248756218906
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02225707671283963
-    nfd 5.138798947689163
-    fdc 1.3135911881292104
+    current_flow_betweenness_centrality 0.022257076712839753
+    nfd 5.138798947689162
+    fdc 1.3135911881292102
     weight 1.0
     formanCurvature 43.30967567840198
-    cluster_coeff 0.859999066072583
+    cluster_coeff 0.8599990660725828
+    ricciCurvature 0.583332946220406
   ]
   node [
     id 38
@@ -694,12 +732,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 1.162196311098293
     betweenness_centrality 0.002551020408163265
-    current_flow_betweenness_centrality 0.010113903929499783
-    nfd 3.5151918222516194
-    fdc 0.8985611325327326
+    current_flow_betweenness_centrality 0.01011390392949978
+    nfd 3.51519182225162
+    fdc 0.8985611325327327
     weight 1.0
     formanCurvature 3.015330572935701
-    cluster_coeff 0.24516558028661603
+    cluster_coeff 0.24516558028661609
+    ricciCurvature 0.5212202501355419
   ]
   node [
     id 39
@@ -712,12 +751,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 8.985050221910766
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021559675825554594
-    nfd 3.753847095297501
-    fdc 0.9595667229177417
+    current_flow_betweenness_centrality 0.021559675825554733
+    nfd 3.753847095297499
+    fdc 0.9595667229177413
     weight 1.0
     formanCurvature 41.93979726765371
-    cluster_coeff 0.8491009740196278
+    cluster_coeff 0.8491009740196281
+    ricciCurvature 0.9380717256538982
   ]
   node [
     id 40
@@ -730,12 +770,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 3.392709661382533
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.018540436082160074
-    nfd 3.890899332572262
-    fdc 0.994600319878852
+    current_flow_betweenness_centrality 0.018540436082160022
+    nfd 3.890899332572261
+    fdc 0.9946003198788518
     weight 1.0
     formanCurvature 26.729876569275838
     cluster_coeff 0.7319628338753181
+    ricciCurvature 0.9333403280419161
   ]
   node [
     id 41
@@ -748,12 +789,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.485861564769149
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021948460791989387
-    nfd 3.890899332572262
-    fdc 0.994600319878852
+    current_flow_betweenness_centrality 0.021948460791989394
+    nfd 3.890899332572261
+    fdc 0.9946003198788518
     weight 1.0
     formanCurvature 43.37357560784207
-    cluster_coeff 0.8590957259221145
+    cluster_coeff 0.8590957259221144
+    ricciCurvature 0.3889869690150898
   ]
   node [
     id 42
@@ -766,12 +808,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.442900510896663
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02223947714625554
-    nfd 5.138798947689163
-    fdc 1.3135911881292104
+    current_flow_betweenness_centrality 0.022239477146255567
+    nfd 5.138798947689162
+    fdc 1.3135911881292102
     weight 1.0
     formanCurvature 43.24184208797846
-    cluster_coeff 0.8595364146231549
+    cluster_coeff 0.8595364146231548
+    ricciCurvature 0.5833328980625151
   ]
   node [
     id 43
@@ -784,12 +827,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.731479564847398
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02177349151859538
-    nfd 3.6540067692869473
-    fdc 0.9340453172736493
+    current_flow_betweenness_centrality 0.021773491518595516
+    nfd 3.65400676928695
+    fdc 0.9340453172736499
     weight 1.0
     formanCurvature 42.72706405188076
-    cluster_coeff 0.8543231004497077
+    cluster_coeff 0.8543231004497076
+    ricciCurvature 0.5455297276739507
   ]
   node [
     id 44
@@ -802,12 +846,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 1.4096221373791484
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.008931967488508052
-    nfd 7.639768286276719
-    fdc 1.952894519197899
+    current_flow_betweenness_centrality 0.00893196748850807
+    nfd 7.6397682862767216
+    fdc 1.9528945191978997
     weight 1.0
     formanCurvature 6.22660871785423
     cluster_coeff 0.40748572632525204
+    ricciCurvature 0.8018381491675518
   ]
   node [
     id 45
@@ -820,12 +865,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.391095066185319
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.022213942003807798
+    current_flow_betweenness_centrality 0.02221394200380793
     nfd 5.075869657502064
     fdc 1.2975050633544376
     weight 1.0
     formanCurvature 43.199926462079816
     cluster_coeff 0.8592232781646214
+    ricciCurvature 0.5833328905460361
   ]
   node [
     id 46
@@ -838,12 +884,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.718068857805646
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021771499225661663
-    nfd 3.6540067692869473
-    fdc 0.9340453172736493
+    current_flow_betweenness_centrality 0.02177149922566173
+    nfd 3.65400676928695
+    fdc 0.9340453172736499
     weight 1.0
     formanCurvature 42.71499530876829
-    cluster_coeff 0.8542315371437742
+    cluster_coeff 0.8542315371437741
+    ricciCurvature 0.5475240494365878
   ]
   node [
     id 47
@@ -856,12 +903,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 10.26704035330373
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.021890841426444985
-    nfd 3.780068608593606
-    fdc 0.9662695243224679
+    current_flow_betweenness_centrality 0.021890841426445068
+    nfd 3.7800686085936066
+    fdc 0.966269524322468
     weight 1.0
     formanCurvature 43.194477415998726
-    cluster_coeff 0.8577676311484427
+    cluster_coeff 0.8577676311484425
+    ricciCurvature 0.3675363917995484
   ]
   node [
     id 48
@@ -874,12 +922,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 5.530698142556501
     betweenness_centrality 0.025510204081632654
-    current_flow_betweenness_centrality 0.020495247539095325
-    nfd 5.163213575693494
-    fdc 1.3198321095068337
+    current_flow_betweenness_centrality 0.020495247539095363
+    nfd 5.163213575693495
+    fdc 1.3198321095068342
     weight 1.0
     formanCurvature 35.76461194140261
-    cluster_coeff 0.8051407692388889
+    cluster_coeff 0.8051407692388893
+    ricciCurvature 0.92929569982158
   ]
   node [
     id 49
@@ -892,12 +941,13 @@ graph [
     degree_centrality 0.9999999999999999
     closeness_centrality 9.607079605830796
     betweenness_centrality 0.0
-    current_flow_betweenness_centrality 0.02194980373124377
-    nfd 4.781761632766062
-    fdc 1.2223245175529658
+    current_flow_betweenness_centrality 0.021949803731243986
+    nfd 4.781761632766064
+    fdc 1.2223245175529662
     weight 1.0
     formanCurvature 42.50474486886115
-    cluster_coeff 0.8542149278980182
+    cluster_coeff 0.8542149278980183
+    ricciCurvature 0.9336992021955348
   ]
   edge [
     source 2
@@ -905,6 +955,7 @@ graph [
     weight 0.006369426751592355
     distance 0.006369426751592355
     formanCurvature 49.390482372510064
+    ricciCurvature 0.24470445446752098
   ]
   edge [
     source 2
@@ -912,6 +963,7 @@ graph [
     weight 0.007411696583671135
     distance 0.007411696583671135
     formanCurvature 49.291113923787464
+    ricciCurvature 0.3765648092403746
   ]
   edge [
     source 2
@@ -919,6 +971,7 @@ graph [
     weight 0.0061378112333526635
     distance 0.0061378112333526635
     formanCurvature 49.412578412481515
+    ricciCurvature 0.1728691298022237
   ]
   edge [
     source 2
@@ -926,6 +979,7 @@ graph [
     weight 0.00799073537927042
     distance 0.00799073537927042
     formanCurvature 49.235954292481274
+    ricciCurvature 0.3920305802576819
   ]
   edge [
     source 2
@@ -933,6 +987,7 @@ graph [
     weight 0.008917197452229297
     distance 0.008917197452229297
     formanCurvature 49.1477658322853
+    ricciCurvature 0.37013085563340153
   ]
   edge [
     source 3
@@ -940,6 +995,7 @@ graph [
     weight 0.007180081065431332
     distance 0.007180081065431332
     formanCurvature 49.313186788795726
+    ricciCurvature 0.32863496863653185
   ]
   edge [
     source 3
@@ -947,6 +1003,7 @@ graph [
     weight 0.0016213086276780642
     distance 0.0016213086276780642
     formanCurvature 49.84448054654294
+    ricciCurvature 0.032780834243992474
   ]
   edge [
     source 3
@@ -954,6 +1011,7 @@ graph [
     weight 0.009380428488708792
     distance 0.009380428488708792
     formanCurvature 49.10370250213825
+    ricciCurvature 0.3442397086583241
   ]
   edge [
     source 3
@@ -961,6 +1019,7 @@ graph [
     weight 0.0
     distance 0.0
     formanCurvature 50.0
+    ricciCurvature 0
   ]
   edge [
     source 3
@@ -968,6 +1027,7 @@ graph [
     weight 0.009843659525188175
     distance 0.009843659525188175
     formanCurvature 49.059659771958636
+    ricciCurvature 0.35244998529876137
   ]
   edge [
     source 3
@@ -975,6 +1035,7 @@ graph [
     weight 0.005327156919513576
     distance 0.005327156919513576
     formanCurvature 49.48995510856727
+    ricciCurvature 0.37247155447404146
   ]
   edge [
     source 3
@@ -982,6 +1043,7 @@ graph [
     weight 0.002200347423277349
     distance 0.002200347423277349
     formanCurvature 49.788999040746994
+    ricciCurvature 0.16889385359651843
   ]
   edge [
     source 3
@@ -989,6 +1051,7 @@ graph [
     weight 0.005095541401273884
     distance 0.005095541401273884
     formanCurvature 49.512074323501935
+    ricciCurvature 0.2571150403386757
   ]
   edge [
     source 3
@@ -996,6 +1059,7 @@ graph [
     weight 0.005095541401273884
     distance 0.005095541401273884
     formanCurvature 49.512074323501935
+    ricciCurvature 0.36440172441010554
   ]
   edge [
     source 3
@@ -1003,6 +1067,7 @@ graph [
     weight 0.0032426172553561283
     distance 0.0032426172553561283
     formanCurvature 49.68921344268576
+    ricciCurvature 0.41546215983052004
   ]
   edge [
     source 3
@@ -1010,6 +1075,7 @@ graph [
     weight 0.004169079328315006
     distance 0.004169079328315006
     formanCurvature 49.60060268315919
+    ricciCurvature 0.21355776368527446
   ]
   edge [
     source 4
@@ -1017,6 +1083,7 @@ graph [
     weight 0.00799073537927042
     distance 0.00799073537927042
     formanCurvature 49.235954292481274
+    ricciCurvature 0.599997549654754
   ]
   edge [
     source 4
@@ -1024,6 +1091,7 @@ graph [
     weight 0.008801389693109396
     distance 0.008801389693109396
     formanCurvature 49.158784883566916
+    ricciCurvature 0.31691209429511524
   ]
   edge [
     source 4
@@ -1031,6 +1099,7 @@ graph [
     weight 0.008222350897510111
     distance 0.008222350897510111
     formanCurvature 49.213899452444494
+    ricciCurvature 0.5999970981265846
   ]
   edge [
     source 4
@@ -1038,6 +1107,7 @@ graph [
     weight 0.008453966415749803
     distance 0.008453966415749803
     formanCurvature 49.19184976239961
+    ricciCurvature 0.5999986314269625
   ]
   edge [
     source 4
@@ -1045,6 +1115,7 @@ graph [
     weight 0.007874927620150518
     distance 0.007874927620150518
     formanCurvature 49.24698364374664
+    ricciCurvature 0.5999974239947219
   ]
   edge [
     source 5
@@ -1052,6 +1123,7 @@ graph [
     weight 0.0011580775911985697
     distance 0.0011580775911985697
     formanCurvature 49.88888892614285
+    ricciCurvature 0.5833330370152076
   ]
   edge [
     source 5
@@ -1059,6 +1131,7 @@ graph [
     weight 0.0019687319050376573
     distance 0.0019687319050376573
     formanCurvature 49.81118778057145
+    ricciCurvature 0.5833332655750035
   ]
   edge [
     source 5
@@ -1066,6 +1139,7 @@ graph [
     weight 0.0023161551823972504
     distance 0.0023161551823972504
     formanCurvature 49.7779066020816
+    ricciCurvature 0.5833331646752169
   ]
   edge [
     source 5
@@ -1073,6 +1147,7 @@ graph [
     weight 0.001852924145917756
     distance 0.001852924145917756
     formanCurvature 49.82228408173067
+    ricciCurvature 0.5833330406335818
   ]
   edge [
     source 5
@@ -1080,6 +1155,7 @@ graph [
     weight 0.0026635784597568435
     distance 0.0026635784597568435
     formanCurvature 49.74463701107344
+    ricciCurvature 0.5833328786402134
   ]
   edge [
     source 5
@@ -1087,6 +1163,7 @@ graph [
     weight 0.002779386218876634
     distance 0.002779386218876634
     formanCurvature 49.73354972240005
+    ricciCurvature 0.5833329811202965
   ]
   edge [
     source 6
@@ -1094,6 +1171,7 @@ graph [
     weight 0.008685581933989606
     distance 0.008685581933989606
     formanCurvature 49.16980522234657
+    ricciCurvature 0.461332742956988
   ]
   edge [
     source 6
@@ -1101,6 +1179,7 @@ graph [
     weight 0.00694846554719164
     distance 0.00694846554719164
     formanCurvature 49.33526480379572
+    ricciCurvature 0.25486217800557764
   ]
   edge [
     source 6
@@ -1108,6 +1187,7 @@ graph [
     weight 0.008569774174869704
     distance 0.008569774174869704
     formanCurvature 49.18082684862405
+    ricciCurvature 0.4420881681244466
   ]
   edge [
     source 6
@@ -1115,6 +1195,7 @@ graph [
     weight 0.00926462072958889
     distance 0.00926462072958889
     formanCurvature 49.114716403428105
+    ricciCurvature 0.4704457569598439
   ]
   edge [
     source 6
@@ -1122,6 +1203,7 @@ graph [
     weight 0.008222350897510111
     distance 0.008222350897510111
     formanCurvature 49.213899452444494
+    ricciCurvature 0.4357176729689657
   ]
   edge [
     source 6
@@ -1129,6 +1211,7 @@ graph [
     weight 0.007874927620150518
     distance 0.007874927620150518
     formanCurvature 49.24698364374664
+    ricciCurvature 0.3953439565026533
   ]
   edge [
     source 7
@@ -1136,6 +1219,7 @@ graph [
     weight 0.001273885350318471
     distance 0.001273885350318471
     formanCurvature 49.87778489999599
+    ricciCurvature -0.5453848209092202
   ]
   edge [
     source 7
@@ -1143,6 +1227,7 @@ graph [
     weight 0.006601042269832047
     distance 0.006601042269832047
     formanCurvature 49.36839148253038
+    ricciCurvature 0.44210452619425544
   ]
   edge [
     source 7
@@ -1150,6 +1235,7 @@ graph [
     weight 0.0030110017371164366
     distance 0.0030110017371164366
     formanCurvature 49.71137900754697
+    ricciCurvature 0.5499986166097937
   ]
   edge [
     source 7
@@ -1157,6 +1243,7 @@ graph [
     weight 0.006369426751592355
     distance 0.006369426751592355
     formanCurvature 49.390482372510064
+    ricciCurvature 0.43954992242488755
   ]
   edge [
     source 7
@@ -1164,6 +1251,7 @@ graph [
     weight 0.006369426751592355
     distance 0.006369426751592355
     formanCurvature 49.390482372510064
+    ricciCurvature 0.4381808512820803
   ]
   edge [
     source 7
@@ -1171,6 +1259,7 @@ graph [
     weight 0.004284887087434908
     distance 0.004284887087434908
     formanCurvature 49.589532131959096
+    ricciCurvature 0.44238848495002414
   ]
   edge [
     source 7
@@ -1178,6 +1267,7 @@ graph [
     weight 0.005211349160393786
     distance 0.005211349160393786
     formanCurvature 49.50101407228568
+    ricciCurvature 0.4122282781078047
   ]
   edge [
     source 9
@@ -1185,6 +1275,7 @@ graph [
     weight 0.008801389693109396
     distance 0.008801389693109396
     formanCurvature 49.158784883566916
+    ricciCurvature 0.13251985364048735
   ]
   edge [
     source 10
@@ -1192,6 +1283,7 @@ graph [
     weight 0.009380428488708792
     distance 0.009380428488708792
     formanCurvature 49.10370250213825
+    ricciCurvature 0.3343855213544453
   ]
   edge [
     source 10
@@ -1199,6 +1291,7 @@ graph [
     weight 0.007411696583671135
     distance 0.007411696583671135
     formanCurvature 49.291113923787464
+    ricciCurvature 0.6000010930524913
   ]
   edge [
     source 10
@@ -1206,6 +1299,7 @@ graph [
     weight 0.00926462072958889
     distance 0.00926462072958889
     formanCurvature 49.114716403428105
+    ricciCurvature 0.5999957478882993
   ]
   edge [
     source 10
@@ -1213,6 +1307,7 @@ graph [
     weight 0.0070642733063115415
     distance 0.0070642733063115415
     formanCurvature 49.32422515254668
+    ricciCurvature 0.6000014158791414
   ]
   edge [
     source 13
@@ -1220,6 +1315,7 @@ graph [
     weight 0.009148812970468989
     distance 0.009148812970468989
     formanCurvature 49.12573159221591
+    ricciCurvature 0.2886108962061881
   ]
   edge [
     source 13
@@ -1227,6 +1323,7 @@ graph [
     weight 0.009612044006948484
     distance 0.009612044006948484
     formanCurvature 49.0816785620525
+    ricciCurvature 0.4379520694967334
   ]
   edge [
     source 13
@@ -1234,6 +1331,7 @@ graph [
     weight 0.00926462072958889
     distance 0.00926462072958889
     formanCurvature 49.114716403428105
+    ricciCurvature 0.43000052865700655
   ]
   edge [
     source 13
@@ -1241,6 +1339,7 @@ graph [
     weight 0.009148812970468989
     distance 0.009148812970468989
     formanCurvature 49.12573159221591
+    ricciCurvature 0.3856160712228641
   ]
   edge [
     source 14
@@ -1248,6 +1347,7 @@ graph [
     weight 0.007411696583671135
     distance 0.007411696583671135
     formanCurvature 49.291113923787464
+    ricciCurvature 0.03683472976255475
   ]
   edge [
     source 16
@@ -1255,6 +1355,7 @@ graph [
     weight 0.0011580775911985697
     distance 0.0011580775911985697
     formanCurvature 49.88888892614285
+    ricciCurvature 0.5833328365515407
   ]
   edge [
     source 16
@@ -1262,6 +1363,7 @@ graph [
     weight 0.0015055008685581628
     distance 0.0015055008685581628
     formanCurvature 49.855580710195916
+    ricciCurvature 0.5833327956297143
   ]
   edge [
     source 16
@@ -1269,6 +1371,7 @@ graph [
     weight 0.0008106543138389766
     distance 0.0008106543138389766
     formanCurvature 49.92220872957148
+    ricciCurvature 0.5833326510267411
   ]
   edge [
     source 16
@@ -1276,6 +1379,7 @@ graph [
     weight 0.0016213086276780642
     distance 0.0016213086276780642
     formanCurvature 49.84448054654294
+    ricciCurvature 0.5833325836896943
   ]
   edge [
     source 16
@@ -1283,6 +1387,7 @@ graph [
     weight 0.0019687319050376573
     distance 0.0019687319050376573
     formanCurvature 49.81118778057145
+    ricciCurvature 0.5833327843960769
   ]
   edge [
     source 17
@@ -1290,6 +1395,7 @@ graph [
     weight 0.009843659525188175
     distance 0.009843659525188175
     formanCurvature 49.059659771958636
+    ricciCurvature 0.31628985259714293
   ]
   edge [
     source 18
@@ -1297,6 +1403,7 @@ graph [
     weight 0.009612044006948484
     distance 0.009612044006948484
     formanCurvature 49.0816785620525
+    ricciCurvature 0.31000999403508
   ]
   edge [
     source 18
@@ -1304,6 +1411,7 @@ graph [
     weight 0.005211349160393786
     distance 0.005211349160393786
     formanCurvature 49.50101407228568
+    ricciCurvature 0.2703549249083592
   ]
   edge [
     source 18
@@ -1311,6 +1419,7 @@ graph [
     weight 0.001852924145917756
     distance 0.001852924145917756
     formanCurvature 49.82228408173067
+    ricciCurvature -0.2030738431927206
   ]
   edge [
     source 18
@@ -1318,6 +1427,7 @@ graph [
     weight 0.004979733642153983
     distance 0.004979733642153983
     formanCurvature 49.52313586221628
+    ricciCurvature 0.17342817043718672
   ]
   edge [
     source 18
@@ -1325,6 +1435,7 @@ graph [
     weight 0.004979733642153983
     distance 0.004979733642153983
     formanCurvature 49.52313586221628
+    ricciCurvature 0.25734781370033066
   ]
   edge [
     source 18
@@ -1332,6 +1443,7 @@ graph [
     weight 0.0028951939779965352
     distance 0.0028951939779965352
     formanCurvature 49.72246372122449
+    ricciCurvature 0.17289193970959715
   ]
   edge [
     source 18
@@ -1339,6 +1451,7 @@ graph [
     weight 0.003821656050955413
     distance 0.003821656050955413
     formanCurvature 49.63382206174696
+    ricciCurvature 0.05552818032024198
   ]
   edge [
     source 22
@@ -1346,6 +1459,7 @@ graph [
     weight 0.009843659525188175
     distance 0.009843659525188175
     formanCurvature 49.059659771958636
+    ricciCurvature 0.34688462928466257
   ]
   edge [
     source 22
@@ -1353,6 +1467,7 @@ graph [
     weight 0.009148812970468989
     distance 0.009148812970468989
     formanCurvature 49.12573159221591
+    ricciCurvature 0.32766324509948763
   ]
   edge [
     source 22
@@ -1360,6 +1475,7 @@ graph [
     weight 0.009496236247828582
     distance 0.009496236247828582
     formanCurvature 49.092689888346484
+    ricciCurvature 0.33762446571525273
   ]
   edge [
     source 26
@@ -1367,6 +1483,7 @@ graph [
     weight 0.009496236247828582
     distance 0.009496236247828582
     formanCurvature 49.092689888346484
+    ricciCurvature 0.5999953989924951
   ]
   edge [
     source 26
@@ -1374,6 +1491,7 @@ graph [
     weight 0.007295888824551233
     distance 0.007295888824551233
     formanCurvature 49.30214971254262
+    ricciCurvature 0.6000013266313144
   ]
   edge [
     source 27
@@ -1381,6 +1499,7 @@ graph [
     weight 0.006253618992472454
     distance 0.006253618992472454
     formanCurvature 49.40152974874673
+    ricciCurvature 0.4277774073098476
   ]
   edge [
     source 27
@@ -1388,6 +1507,7 @@ graph [
     weight 0.009148812970468989
     distance 0.009148812970468989
     formanCurvature 49.12573159221591
+    ricciCurvature 0.45807016954581303
   ]
   edge [
     source 27
@@ -1395,6 +1515,7 @@ graph [
     weight 0.005674580196873169
     distance 0.005674580196873169
     formanCurvature 49.456785942399854
+    ricciCurvature 0.5500005197010139
   ]
   edge [
     source 27
@@ -1402,6 +1523,7 @@ graph [
     weight 0.005211349160393786
     distance 0.005211349160393786
     formanCurvature 49.50101407228568
+    ricciCurvature 0.46313552258994095
   ]
   edge [
     source 27
@@ -1409,6 +1531,7 @@ graph [
     weight 0.008917197452229297
     distance 0.008917197452229297
     formanCurvature 49.1477658322853
+    ricciCurvature 0.4576303639837783
   ]
   edge [
     source 30
@@ -1416,6 +1539,7 @@ graph [
     weight 0.006485234510712257
     distance 0.006485234510712257
     formanCurvature 49.379436283771234
+    ricciCurvature 0.434826778111147
   ]
   edge [
     source 30
@@ -1423,6 +1547,7 @@ graph [
     weight 0.006022003474232762
     distance 0.006022003474232762
     formanCurvature 49.42362836371411
+    ricciCurvature 0.42307631881456376
   ]
   edge [
     source 30
@@ -1430,6 +1555,7 @@ graph [
     weight 0.003705848291835512
     distance 0.003705848291835512
     formanCurvature 49.64489776293874
+    ricciCurvature 0.40753612498158376
   ]
   edge [
     source 30
@@ -1437,6 +1563,7 @@ graph [
     weight 0.005327156919513576
     distance 0.005327156919513576
     formanCurvature 49.48995510856727
+    ricciCurvature 0.4070723684640468
   ]
   edge [
     source 31
@@ -1444,6 +1571,7 @@ graph [
     weight 0.002547770700636942
     distance 0.002547770700636942
     formanCurvature 49.7557255872449
+    ricciCurvature 0.583333180727301
   ]
   edge [
     source 31
@@ -1451,6 +1579,7 @@ graph [
     weight 0.001852924145917756
     distance 0.001852924145917756
     formanCurvature 49.82228408173067
+    ricciCurvature 0.5833331045004908
   ]
   edge [
     source 31
@@ -1458,6 +1587,7 @@ graph [
     weight 0.0026635784597568435
     distance 0.0026635784597568435
     formanCurvature 49.74463701107344
+    ricciCurvature 0.583332983015983
   ]
   edge [
     source 31
@@ -1465,6 +1595,7 @@ graph [
     weight 0.0030110017371164366
     distance 0.0030110017371164366
     formanCurvature 49.71137900754697
+    ricciCurvature 0.583332959217626
   ]
   edge [
     source 32
@@ -1472,6 +1603,7 @@ graph [
     weight 0.008917197452229297
     distance 0.008917197452229297
     formanCurvature 49.1477658322853
+    ricciCurvature 0.45487075043814573
   ]
   edge [
     source 32
@@ -1479,6 +1611,7 @@ graph [
     weight 0.0070642733063115415
     distance 0.0070642733063115415
     formanCurvature 49.32422515254668
+    ricciCurvature 0.3898154118361208
   ]
   edge [
     source 32
@@ -1486,6 +1619,7 @@ graph [
     weight 0.007295888824551233
     distance 0.007295888824551233
     formanCurvature 49.30214971254262
+    ricciCurvature 0.5624990352579111
   ]
   edge [
     source 33
@@ -1493,6 +1627,7 @@ graph [
     weight 0.002200347423277349
     distance 0.002200347423277349
     formanCurvature 49.788999040746994
+    ricciCurvature 0.5833329706657582
   ]
   edge [
     source 33
@@ -1500,6 +1635,7 @@ graph [
     weight 0.0030110017371164366
     distance 0.0030110017371164366
     formanCurvature 49.71137900754697
+    ricciCurvature 0.583332992781386
   ]
   edge [
     source 33
@@ -1507,6 +1643,7 @@ graph [
     weight 0.0033584250144759187
     distance 0.0033584250144759187
     formanCurvature 49.678132591502056
+    ricciCurvature 0.5833329388590158
   ]
   edge [
     source 35
@@ -1514,6 +1651,7 @@ graph [
     weight 0.004979733642153983
     distance 0.004979733642153983
     formanCurvature 49.52313586221628
+    ricciCurvature 0.45909492281367614
   ]
   edge [
     source 35
@@ -1521,6 +1659,7 @@ graph [
     weight 0.008685581933989606
     distance 0.008685581933989606
     formanCurvature 49.16980522234657
+    ricciCurvature 0.45433393548172296
   ]
   edge [
     source 37
@@ -1528,6 +1667,7 @@ graph [
     weight 0.0016213086276780642
     distance 0.0016213086276780642
     formanCurvature 49.84448054654294
+    ricciCurvature 0.5833330905302381
   ]
   edge [
     source 37
@@ -1535,6 +1675,7 @@ graph [
     weight 0.0026635784597568435
     distance 0.0026635784597568435
     formanCurvature 49.74463701107344
+    ricciCurvature 0.5833328199656258
   ]
   edge [
     source 41
@@ -1542,6 +1683,7 @@ graph [
     weight 0.006485234510712257
     distance 0.006485234510712257
     formanCurvature 49.379436283771234
+    ricciCurvature 0.37744120909560663
   ]
   edge [
     source 42
@@ -1549,6 +1691,7 @@ graph [
     weight 0.00347423277359582
     distance 0.00347423277359582
     formanCurvature 49.667053027816294
+    ricciCurvature 0.583332859717576
   ]
   edge [
     source 43
@@ -1556,5 +1699,6 @@ graph [
     weight 0.009148812970468989
     distance 0.009148812970468989
     formanCurvature 49.12573159221591
+    ricciCurvature 0.5999956149625086
   ]
 ]
