@@ -2,7 +2,7 @@
 
 # these are the features we will use for plotting and ML
 features = ['count', 'variant_of_concern', 'variant', 'count_proportion_to_max',
-            'count_proportion_to_sum', 'degree_centrality', 'closeness_centrality',
+            'count_proportion_to_sum', 'degree_centrality', 'closeness_centrality', "ricciCurvature",
             'betweenness_centrality', 'current_flow_betweenness_centrality', 'nfd',
             'fdc', 'formanCurvature', 'cluster_coeff']
 

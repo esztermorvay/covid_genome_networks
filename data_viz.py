@@ -23,6 +23,8 @@ def violinplot(df, x_feature=None, y_feature=None, stratifier=None):
     sns.violinplot(x=x_feature, y=y_feature, data=df, hue=stratifier)
     plt.savefig(plotting_config.violinplot_save_dir + x_feature + "_" + y_feature + ".png")
     plt.clf()
+
+
 def main():
     G = nx.read_gml("gml_files/graph_with_voc_normalized_attrs.gml")
     # print a list of feature names for a node
