@@ -17,6 +17,7 @@ graph [
     formanCurvature 35.60206654589486
     cluster_coeff 0.8042679944606617
     ricciCurvature 0.9348924950048767
+    louvain_community 0
   ]
   node [
     id 1
@@ -36,6 +37,7 @@ graph [
     formanCurvature 42.704275206630044
     cluster_coeff 0.8544500844776692
     ricciCurvature 0.9395910513517567
+    louvain_community 0
   ]
   node [
     id 2
@@ -55,6 +57,7 @@ graph [
     formanCurvature 43.186434087805814
     cluster_coeff 0.857919306426592
     ricciCurvature 0.9380624697971306
+    louvain_community 0
   ]
   node [
     id 3
@@ -74,6 +77,7 @@ graph [
     formanCurvature 43.43964594353535
     cluster_coeff 0.85952666092936
     ricciCurvature 0.9382168401629467
+    louvain_community 0
   ]
   node [
     id 4
@@ -93,6 +97,7 @@ graph [
     formanCurvature 42.75987337550633
     cluster_coeff 0.8545670775131516
     ricciCurvature 0.9385090122984973
+    louvain_community 0
   ]
   node [
     id 5
@@ -112,6 +117,7 @@ graph [
     formanCurvature 43.24993493229185
     cluster_coeff 0.8595489814972748
     ricciCurvature 0.9328600096964244
+    louvain_community 0
   ]
   node [
     id 6
@@ -131,6 +137,7 @@ graph [
     formanCurvature 43.16511816649561
     cluster_coeff 0.8577071100598749
     ricciCurvature 0.9383722936342863
+    louvain_community 0
   ]
   node [
     id 7
@@ -150,6 +157,7 @@ graph [
     formanCurvature 43.34080356910639
     cluster_coeff 0.8587927518824103
     ricciCurvature 0.9385040402044685
+    louvain_community 0
   ]
   node [
     id 8
@@ -169,6 +177,7 @@ graph [
     formanCurvature 2.2378157712081634
     cluster_coeff 0.10157240780270925
     ricciCurvature -0.41208718062471345
+    louvain_community 1
   ]
   node [
     id 9
@@ -188,6 +197,7 @@ graph [
     formanCurvature 42.641751060723216
     cluster_coeff 0.853746779746315
     ricciCurvature 0.938601558172106
+    louvain_community 0
   ]
   node [
     id 10
@@ -207,6 +217,7 @@ graph [
     formanCurvature 42.725963254263604
     cluster_coeff 0.8543160705640906
     ricciCurvature 0.9385810467182443
+    louvain_community 0
   ]
   node [
     id 11
@@ -226,6 +237,7 @@ graph [
     formanCurvature 42.89292391381781
     cluster_coeff 0.8558847839691169
     ricciCurvature 0.9368532720015541
+    louvain_community 0
   ]
   node [
     id 12
@@ -245,6 +257,7 @@ graph [
     formanCurvature 40.962960624000225
     cluster_coeff 0.8434993891564826
     ricciCurvature 0.9380857338707999
+    louvain_community 0
   ]
   node [
     id 13
@@ -264,6 +277,7 @@ graph [
     formanCurvature 43.090585159269125
     cluster_coeff 0.8572524092963061
     ricciCurvature 0.9381658236621779
+    louvain_community 0
   ]
   node [
     id 14
@@ -283,6 +297,7 @@ graph [
     formanCurvature 42.80391643412934
     cluster_coeff 0.8549301499201558
     ricciCurvature 0.9382502993444775
+    louvain_community 0
   ]
   node [
     id 15
@@ -302,6 +317,7 @@ graph [
     formanCurvature 38.50665895901342
     cluster_coeff 0.8225191474315972
     ricciCurvature 0.16680500043166513
+    louvain_community 0
   ]
   node [
     id 16
@@ -321,6 +337,7 @@ graph [
     formanCurvature 43.33391854239356
     cluster_coeff 0.8601709450416006
     ricciCurvature 0.9323989793745103
+    louvain_community 0
   ]
   node [
     id 17
@@ -340,6 +357,7 @@ graph [
     formanCurvature 42.94913310557749
     cluster_coeff 0.8560655073675786
     ricciCurvature 0.9395137115211672
+    louvain_community 0
   ]
   node [
     id 18
@@ -359,6 +377,7 @@ graph [
     formanCurvature 43.46113337796652
     cluster_coeff 0.8596862424366405
     ricciCurvature 0.9381235652728744
+    louvain_community 0
   ]
   node [
     id 19
@@ -378,6 +397,7 @@ graph [
     formanCurvature 22.437380392989464
     cluster_coeff 0.6858549346541092
     ricciCurvature 0.9152608907479272
+    louvain_community 0
   ]
   node [
     id 20
@@ -397,6 +417,7 @@ graph [
     formanCurvature 42.65480475291203
     cluster_coeff 0.8553265444883069
     ricciCurvature 0.9322441978346517
+    louvain_community 0
   ]
   node [
     id 21
@@ -416,6 +437,7 @@ graph [
     formanCurvature 42.8416370895099
     cluster_coeff 0.8556381481443128
     ricciCurvature 0.9380264925700369
+    louvain_community 0
   ]
   node [
     id 22
@@ -435,6 +457,7 @@ graph [
     formanCurvature 42.84254940005339
     cluster_coeff 0.8551665239897203
     ricciCurvature 0.9383986053208062
+    louvain_community 0
   ]
   node [
     id 23
@@ -454,6 +477,7 @@ graph [
     formanCurvature 42.09700745554788
     cluster_coeff 0.8500956093512783
     ricciCurvature 0.9385757970611907
+    louvain_community 0
   ]
   node [
     id 24
@@ -473,6 +497,7 @@ graph [
     formanCurvature 42.947793450813464
     cluster_coeff 0.8561662022108585
     ricciCurvature 0.9386284896672771
+    louvain_community 0
   ]
   node [
     id 25
@@ -492,6 +517,7 @@ graph [
     formanCurvature 41.83513845040466
     cluster_coeff 0.8493763079076141
     ricciCurvature 0.9327821849588457
+    louvain_community 0
   ]
   node [
     id 26
@@ -511,6 +537,7 @@ graph [
     formanCurvature 42.70136074479622
     cluster_coeff 0.85412943450577
     ricciCurvature 0.9387130251420112
+    louvain_community 0
   ]
   node [
     id 27
@@ -530,6 +557,7 @@ graph [
     formanCurvature 43.27289408199197
     cluster_coeff 0.8584417872151262
     ricciCurvature 0.9381323708133222
+    louvain_community 0
   ]
   node [
     id 28
@@ -549,6 +577,7 @@ graph [
     formanCurvature 25.37744960216306
     cluster_coeff 0.7200092264270367
     ricciCurvature 0.8224265330865217
+    louvain_community 1
   ]
   node [
     id 29
@@ -568,6 +597,7 @@ graph [
     formanCurvature 39.96524989417795
     cluster_coeff 0.8367174794738207
     ricciCurvature 0.9383777325702862
+    louvain_community 0
   ]
   node [
     id 30
@@ -587,6 +617,7 @@ graph [
     formanCurvature 43.342945098619616
     cluster_coeff 0.8588283436116311
     ricciCurvature 0.9383497042571687
+    louvain_community 0
   ]
   node [
     id 31
@@ -606,6 +637,7 @@ graph [
     formanCurvature 43.25284685854295
     cluster_coeff 0.8595765353347468
     ricciCurvature 0.9326141098775353
+    louvain_community 0
   ]
   node [
     id 32
@@ -625,6 +657,7 @@ graph [
     formanCurvature 43.1411096008571
     cluster_coeff 0.8573480881542432
     ricciCurvature 0.9390159118641676
+    louvain_community 0
   ]
   node [
     id 33
@@ -644,6 +677,7 @@ graph [
     formanCurvature 43.224915168383916
     cluster_coeff 0.8593974638712063
     ricciCurvature 0.9326688580369403
+    louvain_community 0
   ]
   node [
     id 34
@@ -663,6 +697,7 @@ graph [
     formanCurvature 41.017363035716
     cluster_coeff 0.8431083649031057
     ricciCurvature 0.9405561097740174
+    louvain_community 0
   ]
   node [
     id 35
@@ -682,6 +717,7 @@ graph [
     formanCurvature 43.29738560388016
     cluster_coeff 0.8586208600987242
     ricciCurvature 0.9380929531078168
+    louvain_community 0
   ]
   node [
     id 36
@@ -701,6 +737,7 @@ graph [
     formanCurvature 22.3641015664278
     cluster_coeff 0.683938466544806
     ricciCurvature 0.9073149493092806
+    louvain_community 0
   ]
   node [
     id 37
@@ -720,6 +757,7 @@ graph [
     formanCurvature 43.30967567840198
     cluster_coeff 0.8599990660725828
     ricciCurvature 0.9323697450332014
+    louvain_community 0
   ]
   node [
     id 38
@@ -739,6 +777,7 @@ graph [
     formanCurvature 3.015330572935701
     cluster_coeff 0.24516558028661609
     ricciCurvature 0.5212202501355419
+    louvain_community 1
   ]
   node [
     id 39
@@ -758,6 +797,7 @@ graph [
     formanCurvature 41.93979726765371
     cluster_coeff 0.8491009740196281
     ricciCurvature 0.9380717256538982
+    louvain_community 0
   ]
   node [
     id 40
@@ -777,6 +817,7 @@ graph [
     formanCurvature 26.729876569275838
     cluster_coeff 0.7319628338753181
     ricciCurvature 0.9333403280419161
+    louvain_community 1
   ]
   node [
     id 41
@@ -796,6 +837,7 @@ graph [
     formanCurvature 43.37357560784207
     cluster_coeff 0.8590957259221144
     ricciCurvature 0.9381882478479525
+    louvain_community 0
   ]
   node [
     id 42
@@ -815,6 +857,7 @@ graph [
     formanCurvature 43.24184208797846
     cluster_coeff 0.8595364146231548
     ricciCurvature 0.9323388374762644
+    louvain_community 0
   ]
   node [
     id 43
@@ -834,6 +877,7 @@ graph [
     formanCurvature 42.72706405188076
     cluster_coeff 0.8543231004497076
     ricciCurvature 0.9386366974411052
+    louvain_community 0
   ]
   node [
     id 44
@@ -853,6 +897,7 @@ graph [
     formanCurvature 6.22660871785423
     cluster_coeff 0.40748572632525204
     ricciCurvature 0.8018381491675518
+    louvain_community 1
   ]
   node [
     id 45
@@ -872,6 +917,7 @@ graph [
     formanCurvature 43.199926462079816
     cluster_coeff 0.8592232781646214
     ricciCurvature 0.9326468744271637
+    louvain_community 0
   ]
   node [
     id 46
@@ -891,6 +937,7 @@ graph [
     formanCurvature 42.71499530876829
     cluster_coeff 0.8542315371437741
     ricciCurvature 0.938623737600506
+    louvain_community 0
   ]
   node [
     id 47
@@ -910,6 +957,7 @@ graph [
     formanCurvature 43.194477415998726
     cluster_coeff 0.8577676311484425
     ricciCurvature 0.9384414389513472
+    louvain_community 0
   ]
   node [
     id 48
@@ -929,6 +977,7 @@ graph [
     formanCurvature 35.76461194140261
     cluster_coeff 0.8051407692388893
     ricciCurvature 0.92929569982158
+    louvain_community 0
   ]
   node [
     id 49
@@ -948,6 +997,7 @@ graph [
     formanCurvature 42.50474486886115
     cluster_coeff 0.8542149278980183
     ricciCurvature 0.9336992021955348
+    louvain_community 0
   ]
   edge [
     source 0

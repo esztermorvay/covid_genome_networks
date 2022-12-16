@@ -3,7 +3,10 @@ from GraphRicciCurvature.OllivierRicci import OllivierRicci
 
 import networkx as nx
 
+from graph_visualizer import draw_graph
 from util import get_all_files_in_dir_as_list, gml_dir
+
+import pandas as pd
 
 
 def set_louvain_communities(G):
@@ -26,8 +29,22 @@ def main():
         # set the louvain communities
         G = set_louvain_communities(G)
         # set the ricci flow communities
-        set_ricci_flow_community(G)
+        # set_ricci_flow_community(G)
+        draw_graph(G, "communities" + gml_file, "louvain_community")
         nx.write_gml(G, gml_dir + "/" + gml_file)
+        variants = []
+        communities = []
+        # iterate through nodes in graph
+        for node in G.nodes:
+            variants.append(G.nodes[node]["variant"])
+            communities.append(G.nodes[node]["louvain_community"])
+        # create a dataframe with the variant and community
+        df = pd.DataFrame({"variant": variants, "community": communities})
+        # make sure all columns are printed
+        pd.set_option('display.max_columns', None)
+        # print the crosstab
+        print(pd.crosstab(df["variant"], df["community"]))
+
 
 if __name__ == "__main__":
     main()

@@ -5,6 +5,7 @@ graph [
     count 51
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 1
@@ -12,6 +13,7 @@ graph [
     count 6
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 2
@@ -19,6 +21,7 @@ graph [
     count 9
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 3
@@ -26,6 +29,7 @@ graph [
     count 85
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 4
@@ -33,6 +37,7 @@ graph [
     count 64
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 5
@@ -40,6 +45,7 @@ graph [
     count 188
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 6
@@ -47,6 +53,7 @@ graph [
     count 3
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 7
@@ -54,6 +61,7 @@ graph [
     count 23
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 8
@@ -61,6 +69,7 @@ graph [
     count 8
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 9
@@ -68,6 +77,7 @@ graph [
     count 16
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 10
@@ -75,6 +85,7 @@ graph [
     count 32
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 11
@@ -82,6 +93,7 @@ graph [
     count 819
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 12
@@ -89,6 +101,7 @@ graph [
     count 21
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 13
@@ -96,6 +109,7 @@ graph [
     count 3
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 14
@@ -103,6 +117,7 @@ graph [
     count 47
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 15
@@ -110,6 +125,7 @@ graph [
     count 938
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 16
@@ -117,6 +133,7 @@ graph [
     count 309
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 17
@@ -124,6 +141,7 @@ graph [
     count 6
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 18
@@ -131,6 +149,7 @@ graph [
     count 119
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 19
@@ -138,6 +157,7 @@ graph [
     count 14
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 20
@@ -145,6 +165,7 @@ graph [
     count 15
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 21
@@ -152,6 +173,7 @@ graph [
     count 1
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 22
@@ -159,6 +181,7 @@ graph [
     count 27
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 23
@@ -166,6 +189,7 @@ graph [
     count 22
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 24
@@ -173,6 +197,7 @@ graph [
     count 13
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 25
@@ -180,6 +205,7 @@ graph [
     count 9
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 26
@@ -187,6 +213,7 @@ graph [
     count 244
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 27
@@ -194,6 +221,7 @@ graph [
     count 16
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 28
@@ -201,6 +229,7 @@ graph [
     count 39
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 29
@@ -208,6 +237,7 @@ graph [
     count 437
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 30
@@ -215,6 +245,7 @@ graph [
     count 917
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 31
@@ -222,6 +253,7 @@ graph [
     count 4
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 32
@@ -229,6 +261,7 @@ graph [
     count 12
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 33
@@ -236,6 +269,7 @@ graph [
     count 30
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 34
@@ -243,6 +277,7 @@ graph [
     count 2011
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 35
@@ -250,6 +285,7 @@ graph [
     count 10
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 36
@@ -257,6 +293,7 @@ graph [
     count 3
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 37
@@ -264,6 +301,7 @@ graph [
     count 3
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 38
@@ -271,6 +309,7 @@ graph [
     count 5
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 39
@@ -278,6 +317,7 @@ graph [
     count 2
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 40
@@ -285,6 +325,7 @@ graph [
     count 315
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 41
@@ -292,6 +333,7 @@ graph [
     count 13
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 42
@@ -299,6 +341,7 @@ graph [
     count 136
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 43
@@ -306,6 +349,7 @@ graph [
     count 27
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 44
@@ -313,6 +357,7 @@ graph [
     count 128
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 45
@@ -320,6 +365,7 @@ graph [
     count 38
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 46
@@ -327,6 +373,7 @@ graph [
     count 167
     variant_of_concern 1
     variant "Omicron"
+    louvain_community 0
   ]
   node [
     id 47
@@ -334,6 +381,7 @@ graph [
     count 739
     variant_of_concern 1
     variant "Eta"
+    louvain_community 0
   ]
   node [
     id 48
@@ -341,6 +389,7 @@ graph [
     count 1
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   node [
     id 49
@@ -348,6 +397,7 @@ graph [
     count 4
     variant_of_concern 0
     variant "None"
+    louvain_community 0
   ]
   edge [
     source 0

@@ -10,3 +10,8 @@ save_dir = "plots/"
 boxplot_save_dir = save_dir + "boxplots/"
 violinplot_save_dir = save_dir + "violinplots/"
 pairplot_save_dir = save_dir + "pairplots/"
+
+if __name__ == "__main__":
+    for feature in features:
+        print(feature)
+    print("This is a config file, not meant to be run directly")

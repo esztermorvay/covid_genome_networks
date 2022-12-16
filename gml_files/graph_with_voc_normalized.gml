@@ -9,6 +9,7 @@ graph [
     count_proportion_to_sum 0.006258436617989937
     degree_centrality 0.9999999999999999
     closeness_centrality 5.453496764880263
+    louvain_community 0
   ]
   node [
     id 1
@@ -20,6 +21,7 @@ graph [
     count_proportion_to_sum 0.0007362866609399927
     degree_centrality 0.9999999999999999
     closeness_centrality 9.734838026872813
+    louvain_community 0
   ]
   node [
     id 2
@@ -31,6 +33,7 @@ graph [
     count_proportion_to_sum 0.001104429991409989
     degree_centrality 0.9999999999999999
     closeness_centrality 10.275018820272468
+    louvain_community 0
   ]
   node [
     id 3
@@ -42,6 +45,7 @@ graph [
     count_proportion_to_sum 0.010430727696649897
     degree_centrality 0.9999999999999999
     closeness_centrality 10.589788512076087
+    louvain_community 0
   ]
   node [
     id 4
@@ -53,6 +57,7 @@ graph [
     count_proportion_to_sum 0.007853724383359921
     degree_centrality 0.9999999999999999
     closeness_centrality 9.766746687595216
+    louvain_community 0
   ]
   node [
     id 5
@@ -64,6 +69,7 @@ graph [
     count_proportion_to_sum 0.023070315376119768
     degree_centrality 0.9999999999999999
     closeness_centrality 10.449348019361851
+    louvain_community 0
   ]
   node [
     id 6
@@ -75,6 +81,7 @@ graph [
     count_proportion_to_sum 0.00036814333046999634
     degree_centrality 0.9999999999999999
     closeness_centrality 10.254847309743091
+    louvain_community 0
   ]
   node [
     id 7
@@ -86,6 +93,7 @@ graph [
     count_proportion_to_sum 0.0028224322002699718
     degree_centrality 0.9999999999999999
     closeness_centrality 10.4550284161107
+    louvain_community 0
   ]
   node [
     id 8
@@ -97,6 +105,7 @@ graph [
     count_proportion_to_sum 0.0009817155479199902
     degree_centrality 0.9999999999999999
     closeness_centrality 1.0469282368631374
+    louvain_community 1
   ]
   node [
     id 9
@@ -108,6 +117,7 @@ graph [
     count_proportion_to_sum 0.0019634310958399803
     degree_centrality 0.9999999999999999
     closeness_centrality 9.643866526872408
+    louvain_community 0
   ]
   node [
     id 10
@@ -119,6 +129,7 @@ graph [
     count_proportion_to_sum 0.003926862191679961
     degree_centrality 0.9999999999999999
     closeness_centrality 9.730808150499058
+    louvain_community 0
   ]
   node [
     id 11
@@ -130,6 +141,7 @@ graph [
     count_proportion_to_sum 0.10050312921830899
     degree_centrality 0.9999999999999999
     closeness_centrality 9.936475506082383
+    louvain_community 0
   ]
   node [
     id 12
@@ -141,6 +153,7 @@ graph [
     count_proportion_to_sum 0.0025770033132899743
     degree_centrality 0.9999999999999999
     closeness_centrality 8.272043010752691
+    louvain_community 0
   ]
   node [
     id 13
@@ -152,6 +165,7 @@ graph [
     count_proportion_to_sum 0.00036814333046999634
     degree_centrality 0.9999999999999999
     closeness_centrality 10.163459921692969
+    louvain_community 0
   ]
   node [
     id 14
@@ -163,6 +177,7 @@ graph [
     count_proportion_to_sum 0.005767578844029942
     degree_centrality 0.9999999999999999
     closeness_centrality 9.81773673341532
+    louvain_community 0
   ]
   node [
     id 15
@@ -174,6 +189,7 @@ graph [
     count_proportion_to_sum 0.11510614799361885
     degree_centrality 0.9999999999999999
     closeness_centrality 6.676160121179606
+    louvain_community 0
   ]
   node [
     id 16
@@ -185,6 +201,7 @@ graph [
     count_proportion_to_sum 0.037918763038409624
     degree_centrality 0.9999999999999999
     closeness_centrality 10.555444680054885
+    louvain_community 0
   ]
   node [
     id 17
@@ -196,6 +213,7 @@ graph [
     count_proportion_to_sum 0.0007362866609399927
     degree_centrality 0.9999999999999999
     closeness_centrality 9.991145009327257
+    louvain_community 0
   ]
   node [
     id 18
@@ -207,6 +225,7 @@ graph [
     count_proportion_to_sum 0.014603018775309853
     degree_centrality 0.9999999999999999
     closeness_centrality 10.589788512076087
+    louvain_community 0
   ]
   node [
     id 19
@@ -218,6 +237,7 @@ graph [
     count_proportion_to_sum 0.0017180022088599829
     degree_centrality 0.9999999999999999
     closeness_centrality 2.7677368290225943
+    louvain_community 0
   ]
   node [
     id 20
@@ -229,6 +249,7 @@ graph [
     count_proportion_to_sum 0.0018407166523499816
     degree_centrality 0.9999999999999999
     closeness_centrality 9.764943457189014
+    louvain_community 0
   ]
   node [
     id 21
@@ -240,6 +261,7 @@ graph [
     count_proportion_to_sum 0.00012271444348999877
     degree_centrality 0.9999999999999999
     closeness_centrality 9.896963884730539
+    louvain_community 0
   ]
   node [
     id 22
@@ -251,6 +273,7 @@ graph [
     count_proportion_to_sum 0.0033132899742299667
     degree_centrality 0.9999999999999999
     closeness_centrality 9.856846666356054
+    louvain_community 0
   ]
   node [
     id 23
@@ -262,6 +285,7 @@ graph [
     count_proportion_to_sum 0.002699717756779973
     degree_centrality 0.9999999999999999
     closeness_centrality 9.122789995687796
+    louvain_community 0
   ]
   node [
     id 24
@@ -273,6 +297,7 @@ graph [
     count_proportion_to_sum 0.001595287765369984
     degree_centrality 0.9999999999999999
     closeness_centrality 9.994921219852126
+    louvain_community 0
   ]
   node [
     id 25
@@ -284,6 +309,7 @@ graph [
     count_proportion_to_sum 0.001104429991409989
     degree_centrality 0.9999999999999999
     closeness_centrality 8.950836665185845
+    louvain_community 0
   ]
   node [
     id 26
@@ -295,6 +321,7 @@ graph [
     count_proportion_to_sum 0.0299423242115597
     degree_centrality 0.9999999999999999
     closeness_centrality 9.703582240161454
+    louvain_community 0
   ]
   node [
     id 27
@@ -306,6 +333,7 @@ graph [
     count_proportion_to_sum 0.0019634310958399803
     degree_centrality 0.9999999999999999
     closeness_centrality 10.368178588056558
+    louvain_community 0
   ]
   node [
     id 28
@@ -317,6 +345,7 @@ graph [
     count_proportion_to_sum 0.004785863296109952
     degree_centrality 0.9999999999999999
     closeness_centrality 3.192381110465599
+    louvain_community 1
   ]
   node [
     id 29
@@ -328,6 +357,7 @@ graph [
     count_proportion_to_sum 0.05362621180512946
     degree_centrality 0.9999999999999999
     closeness_centrality 7.570224719101124
+    louvain_community 0
   ]
   node [
     id 30
@@ -339,6 +369,7 @@ graph [
     count_proportion_to_sum 0.11252914468032887
     degree_centrality 0.9999999999999999
     closeness_centrality 10.445478559261362
+    louvain_community 0
   ]
   node [
     id 31
@@ -350,6 +381,7 @@ graph [
     count_proportion_to_sum 0.0004908577739599951
     degree_centrality 0.9999999999999999
     closeness_centrality 10.454511761217635
+    louvain_community 0
   ]
   node [
     id 32
@@ -361,6 +393,7 @@ graph [
     count_proportion_to_sum 0.0014725733218799854
     degree_centrality 0.9999999999999999
     closeness_centrality 10.200949901152418
+    louvain_community 0
   ]
   node [
     id 33
@@ -372,6 +405,7 @@ graph [
     count_proportion_to_sum 0.003681433304699963
     degree_centrality 0.9999999999999999
     closeness_centrality 10.42129504199404
+    louvain_community 0
   ]
   node [
     id 34
@@ -383,6 +417,7 @@ graph [
     count_proportion_to_sum 0.24677874585838752
     degree_centrality 0.9999999999999999
     closeness_centrality 8.257997150496712
+    louvain_community 0
   ]
   node [
     id 35
@@ -394,6 +429,7 @@ graph [
     count_proportion_to_sum 0.0012271444348999877
     degree_centrality 0.9999999999999999
     closeness_centrality 10.398245312231207
+    louvain_community 0
   ]
   node [
     id 36
@@ -405,6 +441,7 @@ graph [
     count_proportion_to_sum 0.00036814333046999634
     degree_centrality 0.9999999999999999
     closeness_centrality 2.757689124101388
+    louvain_community 0
   ]
   node [
     id 37
@@ -416,6 +453,7 @@ graph [
     count_proportion_to_sum 0.00036814333046999634
     degree_centrality 0.9999999999999999
     closeness_centrality 10.525248756218906
+    louvain_community 0
   ]
   node [
     id 38
@@ -427,6 +465,7 @@ graph [
     count_proportion_to_sum 0.0006135722174499938
     degree_centrality 0.9999999999999999
     closeness_centrality 1.162196311098293
+    louvain_community 1
   ]
   node [
     id 39
@@ -438,6 +477,7 @@ graph [
     count_proportion_to_sum 0.00024542888697999754
     degree_centrality 0.9999999999999999
     closeness_centrality 8.985050221910766
+    louvain_community 0
   ]
   node [
     id 40
@@ -449,6 +489,7 @@ graph [
     count_proportion_to_sum 0.03865504969934962
     degree_centrality 0.9999999999999999
     closeness_centrality 3.392709661382533
+    louvain_community 1
   ]
   node [
     id 41
@@ -460,6 +501,7 @@ graph [
     count_proportion_to_sum 0.001595287765369984
     degree_centrality 0.9999999999999999
     closeness_centrality 10.485861564769149
+    louvain_community 0
   ]
   node [
     id 42
@@ -471,6 +513,7 @@ graph [
     count_proportion_to_sum 0.016689164314639834
     degree_centrality 0.9999999999999999
     closeness_centrality 10.442900510896663
+    louvain_community 0
   ]
   node [
     id 43
@@ -482,6 +525,7 @@ graph [
     count_proportion_to_sum 0.0033132899742299667
     degree_centrality 0.9999999999999999
     closeness_centrality 9.731479564847398
+    louvain_community 0
   ]
   node [
     id 44
@@ -493,6 +537,7 @@ graph [
     count_proportion_to_sum 0.015707448766719843
     degree_centrality 0.9999999999999999
     closeness_centrality 1.4096221373791484
+    louvain_community 1
   ]
   node [
     id 45
@@ -504,6 +549,7 @@ graph [
     count_proportion_to_sum 0.004663148852619954
     degree_centrality 0.9999999999999999
     closeness_centrality 10.391095066185319
+    louvain_community 0
   ]
   node [
     id 46
@@ -515,6 +561,7 @@ graph [
     count_proportion_to_sum 0.020493312062829797
     degree_centrality 0.9999999999999999
     closeness_centrality 9.718068857805646
+    louvain_community 0
   ]
   node [
     id 47
@@ -526,6 +573,7 @@ graph [
     count_proportion_to_sum 0.0906859737391091
     degree_centrality 0.9999999999999999
     closeness_centrality 10.26704035330373
+    louvain_community 0
   ]
   node [
     id 48
@@ -537,6 +585,7 @@ graph [
     count_proportion_to_sum 0.00012271444348999877
     degree_centrality 0.9999999999999999
     closeness_centrality 5.530698142556501
+    louvain_community 0
   ]
   node [
     id 49
@@ -548,6 +597,7 @@ graph [
     count_proportion_to_sum 0.0004908577739599951
     degree_centrality 0.9999999999999999
     closeness_centrality 9.607079605830796
+    louvain_community 0
   ]
   edge [
     source 0

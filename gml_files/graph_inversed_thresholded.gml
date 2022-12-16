@@ -16,6 +16,7 @@ graph [
     weight 1.0
     formanCurvature 35.60206654589486
     cluster_coeff 0.8042679944606614
+    louvain_community 0
   ]
   node [
     id 1
@@ -34,6 +35,7 @@ graph [
     weight 1.0
     formanCurvature 42.704275206630044
     cluster_coeff 0.8544500844776687
+    louvain_community 1
   ]
   node [
     id 2
@@ -52,6 +54,7 @@ graph [
     weight 1.0
     formanCurvature 43.186434087805814
     cluster_coeff 0.8579193064265919
+    louvain_community 1
   ]
   node [
     id 3
@@ -70,6 +73,7 @@ graph [
     weight 1.0
     formanCurvature 43.43964594353535
     cluster_coeff 0.8595266609293604
+    louvain_community 2
   ]
   node [
     id 4
@@ -88,6 +92,7 @@ graph [
     weight 1.0
     formanCurvature 42.75987337550633
     cluster_coeff 0.8545670775131519
+    louvain_community 1
   ]
   node [
     id 5
@@ -106,6 +111,7 @@ graph [
     weight 1.0
     formanCurvature 43.24993493229185
     cluster_coeff 0.8595489814972749
+    louvain_community 1
   ]
   node [
     id 6
@@ -124,6 +130,7 @@ graph [
     weight 1.0
     formanCurvature 43.16511816649561
     cluster_coeff 0.8577071100598749
+    louvain_community 1
   ]
   node [
     id 7
@@ -142,6 +149,7 @@ graph [
     weight 1.0
     formanCurvature 43.34080356910639
     cluster_coeff 0.8587927518824102
+    louvain_community 1
   ]
   node [
     id 8
@@ -160,6 +168,7 @@ graph [
     weight 1.0
     formanCurvature 2.2378157712081634
     cluster_coeff 0.10157240780270924
+    louvain_community 3
   ]
   node [
     id 9
@@ -178,6 +187,7 @@ graph [
     weight 1.0
     formanCurvature 42.641751060723216
     cluster_coeff 0.8537467797463149
+    louvain_community 2
   ]
   node [
     id 10
@@ -196,6 +206,7 @@ graph [
     weight 1.0
     formanCurvature 42.725963254263604
     cluster_coeff 0.8543160705640905
+    louvain_community 2
   ]
   node [
     id 11
@@ -214,6 +225,7 @@ graph [
     weight 1.0
     formanCurvature 42.89292391381781
     cluster_coeff 0.8558847839691168
+    louvain_community 1
   ]
   node [
     id 12
@@ -232,6 +244,7 @@ graph [
     weight 1.0
     formanCurvature 40.962960624000225
     cluster_coeff 0.8434993891564823
+    louvain_community 4
   ]
   node [
     id 13
@@ -250,6 +263,7 @@ graph [
     weight 1.0
     formanCurvature 43.090585159269125
     cluster_coeff 0.8572524092963063
+    louvain_community 1
   ]
   node [
     id 14
@@ -268,6 +282,7 @@ graph [
     weight 1.0
     formanCurvature 42.80391643412934
     cluster_coeff 0.8549301499201558
+    louvain_community 1
   ]
   node [
     id 15
@@ -286,6 +301,7 @@ graph [
     weight 1.0
     formanCurvature 38.50665895901342
     cluster_coeff 0.822519147431597
+    louvain_community 5
   ]
   node [
     id 16
@@ -304,6 +320,7 @@ graph [
     weight 1.0
     formanCurvature 43.33391854239356
     cluster_coeff 0.8601709450416007
+    louvain_community 2
   ]
   node [
     id 17
@@ -322,6 +339,7 @@ graph [
     weight 1.0
     formanCurvature 42.94913310557749
     cluster_coeff 0.8560655073675781
+    louvain_community 1
   ]
   node [
     id 18
@@ -340,6 +358,7 @@ graph [
     weight 1.0
     formanCurvature 43.46113337796652
     cluster_coeff 0.8596862424366404
+    louvain_community 2
   ]
   node [
     id 19
@@ -358,6 +377,7 @@ graph [
     weight 1.0
     formanCurvature 22.437380392989464
     cluster_coeff 0.6858549346541092
+    louvain_community 6
   ]
   node [
     id 20
@@ -376,6 +396,7 @@ graph [
     weight 1.0
     formanCurvature 42.65480475291203
     cluster_coeff 0.855326544488307
+    louvain_community 2
   ]
   node [
     id 21
@@ -394,6 +415,7 @@ graph [
     weight 1.0
     formanCurvature 42.8416370895099
     cluster_coeff 0.8556381481443128
+    louvain_community 1
   ]
   node [
     id 22
@@ -412,6 +434,7 @@ graph [
     weight 1.0
     formanCurvature 42.84254940005339
     cluster_coeff 0.8551665239897205
+    louvain_community 1
   ]
   node [
     id 23
@@ -430,6 +453,7 @@ graph [
     weight 1.0
     formanCurvature 42.09700745554788
     cluster_coeff 0.8500956093512784
+    louvain_community 2
   ]
   node [
     id 24
@@ -448,6 +472,7 @@ graph [
     weight 1.0
     formanCurvature 42.947793450813464
     cluster_coeff 0.8561662022108586
+    louvain_community 1
   ]
   node [
     id 25
@@ -466,6 +491,7 @@ graph [
     weight 1.0
     formanCurvature 41.83513845040466
     cluster_coeff 0.849376307907614
+    louvain_community 1
   ]
   node [
     id 26
@@ -484,6 +510,7 @@ graph [
     weight 1.0
     formanCurvature 42.70136074479622
     cluster_coeff 0.8541294345057701
+    louvain_community 2
   ]
   node [
     id 27
@@ -502,6 +529,7 @@ graph [
     weight 1.0
     formanCurvature 43.27289408199197
     cluster_coeff 0.8584417872151265
+    louvain_community 2
   ]
   node [
     id 28
@@ -520,6 +548,7 @@ graph [
     weight 1.0
     formanCurvature 25.37744960216306
     cluster_coeff 0.7200092264270362
+    louvain_community 8
   ]
   node [
     id 29
@@ -538,6 +567,7 @@ graph [
     weight 1.0
     formanCurvature 39.96524989417795
     cluster_coeff 0.8367174794738204
+    louvain_community 9
   ]
   node [
     id 30
@@ -556,6 +586,7 @@ graph [
     weight 1.0
     formanCurvature 43.342945098619616
     cluster_coeff 0.8588283436116307
+    louvain_community 1
   ]
   node [
     id 31
@@ -574,6 +605,7 @@ graph [
     weight 1.0
     formanCurvature 43.25284685854295
     cluster_coeff 0.8595765353347469
+    louvain_community 1
   ]
   node [
     id 32
@@ -592,6 +624,7 @@ graph [
     weight 1.0
     formanCurvature 43.1411096008571
     cluster_coeff 0.8573480881542436
+    louvain_community 1
   ]
   node [
     id 33
@@ -610,6 +643,7 @@ graph [
     weight 1.0
     formanCurvature 43.224915168383916
     cluster_coeff 0.8593974638712062
+    louvain_community 1
   ]
   node [
     id 34
@@ -628,6 +662,7 @@ graph [
     weight 1.0
     formanCurvature 41.017363035716
     cluster_coeff 0.8431083649031057
+    louvain_community 10
   ]
   node [
     id 35
@@ -646,6 +681,7 @@ graph [
     weight 1.0
     formanCurvature 43.29738560388016
     cluster_coeff 0.8586208600987243
+    louvain_community 2
   ]
   node [
     id 36
@@ -664,6 +700,7 @@ graph [
     weight 1.0
     formanCurvature 22.3641015664278
     cluster_coeff 0.6839384665448065
+    louvain_community 11
   ]
   node [
     id 37
@@ -682,6 +719,7 @@ graph [
     weight 1.0
     formanCurvature 43.30967567840198
     cluster_coeff 0.8599990660725831
+    louvain_community 2
   ]
   node [
     id 38
@@ -700,6 +738,7 @@ graph [
     weight 1.0
     formanCurvature 3.015330572935701
     cluster_coeff 0.24516558028661628
+    louvain_community 12
   ]
   node [
     id 39
@@ -718,6 +757,7 @@ graph [
     weight 1.0
     formanCurvature 41.93979726765371
     cluster_coeff 0.8491009740196283
+    louvain_community 2
   ]
   node [
     id 40
@@ -736,6 +776,7 @@ graph [
     weight 1.0
     formanCurvature 26.729876569275838
     cluster_coeff 0.7319628338753182
+    louvain_community 13
   ]
   node [
     id 41
@@ -754,6 +795,7 @@ graph [
     weight 1.0
     formanCurvature 43.37357560784207
     cluster_coeff 0.8590957259221145
+    louvain_community 2
   ]
   node [
     id 42
@@ -772,6 +814,7 @@ graph [
     weight 1.0
     formanCurvature 43.24184208797846
     cluster_coeff 0.8595364146231549
+    louvain_community 1
   ]
   node [
     id 43
@@ -790,6 +833,7 @@ graph [
     weight 1.0
     formanCurvature 42.72706405188076
     cluster_coeff 0.8543231004497076
+    louvain_community 2
   ]
   node [
     id 44
@@ -808,6 +852,7 @@ graph [
     weight 1.0
     formanCurvature 6.22660871785423
     cluster_coeff 0.407485726325252
+    louvain_community 14
   ]
   node [
     id 45
@@ -826,6 +871,7 @@ graph [
     weight 1.0
     formanCurvature 43.199926462079816
     cluster_coeff 0.8592232781646214
+    louvain_community 1
   ]
   node [
     id 46
@@ -844,6 +890,7 @@ graph [
     weight 1.0
     formanCurvature 42.71499530876829
     cluster_coeff 0.8542315371437743
+    louvain_community 2
   ]
   node [
     id 47
@@ -862,6 +909,7 @@ graph [
     weight 1.0
     formanCurvature 43.194477415998726
     cluster_coeff 0.8577676311484425
+    louvain_community 1
   ]
   node [
     id 48
@@ -880,6 +928,7 @@ graph [
     weight 1.0
     formanCurvature 35.76461194140261
     cluster_coeff 0.8051407692388889
+    louvain_community 7
   ]
   node [
     id 49
@@ -898,6 +947,7 @@ graph [
     weight 1.0
     formanCurvature 42.50474486886115
     cluster_coeff 0.8542149278980185
+    louvain_community 1
   ]
   edge [
     source 1
