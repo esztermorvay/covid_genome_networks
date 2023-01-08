@@ -5,6 +5,10 @@ from Bio import SeqIO
 import util
 from Bio import pairwise2
 import networkx as nx
+from multiprocessing import Pool
+import threading
+import json
+import traceback
 
 """
 https://biopython.org/docs/1.75/api/Bio.pairwise2.html
@@ -48,19 +52,76 @@ def remove_empty_files(file_names, dir):
             os.remove(file_path)
             print("removed " + file_name)
 
+def get_similarity_scores_subprocess(combinations_info):
+    # tuple of thread_num, combinations
+    thread_num, group1name, group2name, combinations = combinations_info
+    log_file_name = group1name + group2name + "_thread" +  str(thread_num) + ".json"
+    # inititialize a list of empty strings with size length
+    counts = {}
+    results = {}
+    for combination in combinations:
+        file_name1 = combination[0][11:-4]
+        file_name2 = combination[1][11:-4]
+        file_path1 = zips_dir + "/" + combination[0]
+        file_path2 = zips_dir + "/" + combination[1]
+        try:
+            temp1 = "temp" + str(thread_num)
+            temp2 = "temp" + str(thread_num*10)
+            util.extract_file_from_zip(file_path1, temp1)
+            util.extract_file_from_zip(file_path2, temp2)
 
+            sequence1, counts[file_name1] = get_longest_sequence_from_fasta(temp1 + fna_file)
+            sequence2, counts[file_name2] = get_longest_sequence_from_fasta(temp2 + fna_file)
+            score = get_similarity_score(sequence1, sequence2)
+            key = (file_name1, file_name2)
+            print(key, ":", score)
+            results[key] = score
+        except Exception as e:
+            continue
+    with open("counts/" + log_file_name, "w") as counts_file:
+        json.dump(counts, counts_file)
+    with open("scores/" + log_file_name, "w") as counts_file:
+        json.dump(results, counts_file)
+
+
+def run_multithreading(group1name, group2name):
+    to_process = get_subgroups(group1name, group2name)
+    # with Pool(4) as p:
+    #     p.map(get_similarity_scores_subprocess, to_process)
+    with Pool(1) as p:
+        p.map(get_similarity_scores_subprocess, to_process)
+
+
+def get_subgroups(group1name, group2name):
+    # open the file corresponding to the combinations we need to do
+    file_name = "util_files/combinations/" + group1name
+    if group2name != group1name:
+        file_name += group2name
+    file_name += ".json"
+    # open the combinations file
+    combinations = []
+    with open(file_name, "r") as f:
+        combinations = json.load(f)
+    # divide the total amount of combinations into 4
+    interval_size = len(combinations)//4
+    to_process = [(1,group1name, group2name, combinations[0:interval_size]), (2,group1name, group2name, combinations[interval_size:2*interval_size]),
+                  (3,group1name, group2name, combinations[2*interval_size:3*interval_size]), (4,group1name, group2name, combinations[3*interval_size:])]
+    return to_process
 def main():
     # testing
-    util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.13.1.zip", "temp1")
-    util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.1.15.zip", "temp2")
+    # util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.13.1.zip", "temp1")
+    # util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.1.15.zip", "temp2")
+    #
+    # se1 = get_longest_sequence_from_fasta("temp1/ncbi_dataset/data/genomic.fna")
+    # se2 = get_longest_sequence_from_fasta("temp2/ncbi_dataset/data/genomic.fna")
+    run_multithreading("group9", "group9")
 
-    se1 = get_longest_sequence_from_fasta("temp1/ncbi_dataset/data/genomic.fna")
-    se2 = get_longest_sequence_from_fasta("temp2/ncbi_dataset/data/genomic.fna")
+
+def orig_function():
     G = nx.Graph()
-    # this is a list of all the different genome zip files
-    file_names = util.get_all_files_in_dir_as_list("genomes")[3:]
-    file_names = util.take_random_sample(file_names, 50)
-    # remove_empty_files(file_names, zips_dir)
+
+    file_names = util.get_all_files_in_dir_as_list("genomes")
+    file_names = file_names[2:]
     length = len(file_names)
     # inititialize a list of empty strings with size length
     sequences = [""] * length
