@@ -81,10 +81,11 @@ def get_similarity_scores_subprocess(combinations_info):
             # time how long this takes
             start_time = time.time()
             sequence1, counts[file_name1] = get_longest_sequence_from_fasta(temp1 + fna_file)
-            end_time = time.time()
-            print("time to get sequence 1: " + str(end_time - start_time))
+
             sequence2, counts[file_name2] = get_longest_sequence_from_fasta(temp2 + fna_file)
             score = get_similarity_score(sequence1, sequence2)
+            end_time = time.time()
+            print("time to get similarity score: " + str(end_time - start_time))
             # key = (file_name1, file_name2)
             key = file_name1 + "_" + file_name2
             # print(key, ":", score)
