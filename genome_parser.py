@@ -60,7 +60,7 @@ def get_similarity_scores_subprocess(combinations_info):
     # inititialize a list of empty strings with size length
     counts = {}
     results = {}
-    benchmark = 100
+    benchmark = 50
     counter = 0
     for combination in combinations:
         counter += 1
@@ -69,7 +69,7 @@ def get_similarity_scores_subprocess(combinations_info):
                 json.dump(counts, counts_file)
             with open("scores/" + log_file_name, "w") as counts_file:
                 json.dump(results, counts_file)
-            print("combination " + str(thread_num) + " " + str(counter) + "/" + str(len(combinations)), counter/len(combinations), "% done")
+            print("combination " + str(thread_num) + " " + str(counter) + "/" + str(len(combinations)), 100*counter/len(combinations), "% done")
         file_name1 = combination[0][11:-4]
         file_name2 = combination[1][11:-4]
         file_path1 = zips_dir + "/" + combination[0]
