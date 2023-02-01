@@ -60,7 +60,7 @@ def get_similarity_scores_subprocess(combinations_info):
     # inititialize a list of empty strings with size length
     counts = {}
     results = {}
-    benchmark = 50
+    benchmark = 5
     counter = 0
     for combination in combinations:
         counter += 1
