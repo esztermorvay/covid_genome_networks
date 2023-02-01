@@ -61,8 +61,11 @@ def get_similarity_scores_subprocess(combinations_info):
     # inititialize a list of empty strings with size length
     counts = {}
     results = {}
-    benchmark = 50
+    benchmark = 10
     counter = 0
+    logging = thread_num == 1
+    if logging:
+        print("logging for thread " + str(thread_num), len(combinations))
     for combination in combinations:
         counter += 1
         if counter % benchmark == 0 or counter == len(combinations):
@@ -93,6 +96,8 @@ def get_similarity_scores_subprocess(combinations_info):
             key = file_name1 + "_" + file_name2
             # print(key, ":", score)
             results[key] = score
+            if logging:
+                print("iteration completed: " + str(counter) + "/" + str(len(combinations))
             # FOR DEBUGGING ONLY
             # return
         except Exception as e:
