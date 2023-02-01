@@ -64,7 +64,7 @@ def get_similarity_scores_subprocess(combinations_info):
     counter = 0
     for combination in combinations:
         counter += 1
-        if counter % benchmark == 0:
+        if counter % benchmark == 0 or counter == len(combinations):
             with open("counts/" + log_file_name, "w") as counts_file:
                 json.dump(counts, counts_file)
             with open("scores/" + log_file_name, "w") as counts_file:
@@ -108,6 +108,7 @@ def run_multithreading(group1name, group2name, num_threads=4):
     to_process = get_subgroups(group1name, group2name, num_threads=num_threads)
     with Pool(num_threads) as p:
         p.map(get_similarity_scores_subprocess, to_process)
+    print("threads joined")
     # with Pool(2) as p:
     #     p.map(get_similarity_scores_subprocess, to_process)
 
