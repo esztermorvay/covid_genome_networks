@@ -92,7 +92,8 @@ def get_similarity_scores_subprocess(combinations_info):
             # print(key, ":", score)
             results[key] = score
             # FOR DEBUGGING ONLY
-            return
+            break
+            # return
         except Exception as e:
             continue
     with open("counts/" + log_file_name, "w") as counts_file:
