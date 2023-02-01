@@ -59,7 +59,16 @@ def get_similarity_scores_subprocess(combinations_info):
     # inititialize a list of empty strings with size length
     counts = {}
     results = {}
+    benchmark = 250
+    counter = 0
     for combination in combinations:
+        counter += 1
+        if counter % benchmark == 0:
+            with open("counts/" + log_file_name, "w") as counts_file:
+                json.dump(counts, counts_file)
+            with open("scores/" + log_file_name, "w") as counts_file:
+                json.dump(results, counts_file)
+            print("combination " + str(thread_num) + " " + str(counter) + "/" + str(len(combinations)), counter/len(combinations), "% done")
         file_name1 = combination[0][11:-4]
         file_name2 = combination[1][11:-4]
         file_path1 = zips_dir + "/" + combination[0]
@@ -69,12 +78,16 @@ def get_similarity_scores_subprocess(combinations_info):
             temp2 = "temp" + str(thread_num*10)
             util.extract_file_from_zip(file_path1, temp1)
             util.extract_file_from_zip(file_path2, temp2)
-
+            # time how long this takes
+            start_time = time.time()
             sequence1, counts[file_name1] = get_longest_sequence_from_fasta(temp1 + fna_file)
+            end_time = time.time()
+            print("time to get sequence 1: " + str(end_time - start_time))
             sequence2, counts[file_name2] = get_longest_sequence_from_fasta(temp2 + fna_file)
             score = get_similarity_score(sequence1, sequence2)
-            key = (file_name1, file_name2)
-            print(key, ":", score)
+            # key = (file_name1, file_name2)
+            key = file_name1 + "_" + file_name2
+            # print(key, ":", score)
             results[key] = score
         except Exception as e:
             continue
@@ -88,7 +101,7 @@ def run_multithreading(group1name, group2name):
     to_process = get_subgroups(group1name, group2name)
     # with Pool(4) as p:
     #     p.map(get_similarity_scores_subprocess, to_process)
-    with Pool(1) as p:
+    with Pool(2) as p:
         p.map(get_similarity_scores_subprocess, to_process)
 
 
@@ -114,7 +127,7 @@ def main():
     #
     # se1 = get_longest_sequence_from_fasta("temp1/ncbi_dataset/data/genomic.fna")
     # se2 = get_longest_sequence_from_fasta("temp2/ncbi_dataset/data/genomic.fna")
-    run_multithreading("group9", "group9")
+    run_multithreading("group8", "group9")
 
 
 def orig_function():
