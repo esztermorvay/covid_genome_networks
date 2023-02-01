@@ -61,7 +61,7 @@ def get_similarity_scores_subprocess(combinations_info):
     # inititialize a list of empty strings with size length
     counts = {}
     results = {}
-    benchmark = 10
+    benchmark = 50
     counter = 0
     logging = thread_num == 1
     if logging:
@@ -85,9 +85,13 @@ def get_similarity_scores_subprocess(combinations_info):
             util.extract_file_from_zip(file_path2, temp2)
             # time how long this takes
             start_time = time.time()
+            if logging:
+                print("attempting to get longest seq")
             sequence1, counts[file_name1] = get_longest_sequence_from_fasta(temp1 + fna_file)
 
             sequence2, counts[file_name2] = get_longest_sequence_from_fasta(temp2 + fna_file)
+            if logging:
+                print("got longest seq")
             score = get_similarity_score(sequence1, sequence2)
             end_time = time.time()
 
