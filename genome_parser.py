@@ -56,6 +56,7 @@ def remove_empty_files(file_names, dir):
 def get_similarity_scores_subprocess(combinations_info):
     # tuple of thread_num, combinations
     thread_num, group1name, group2name, combinations = combinations_info
+    print("thread " + str(thread_num) + " started")
     log_file_name = group1name + group2name + "_thread" +  str(thread_num) + ".json"
     # inititialize a list of empty strings with size length
     counts = {}
@@ -102,6 +103,7 @@ def get_similarity_scores_subprocess(combinations_info):
     with open("scores/" + log_file_name, "w") as counts_file:
         json.dump(results, counts_file, indent=4)
     print("done writing to file for thread " + str(thread_num))
+    return 0
 
 
 def run_multithreading(group1name, group2name, num_threads=4):
