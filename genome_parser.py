@@ -97,7 +97,7 @@ def get_similarity_scores_subprocess(combinations_info):
             # print(key, ":", score)
             results[key] = score
             if logging:
-                print("iteration completed: " + str(counter) + "/" + str(len(combinations))
+                print("iteration completed: " + str(counter) + "/" + str(len(combinations)))
             # FOR DEBUGGING ONLY
             # return
         except Exception as e:
