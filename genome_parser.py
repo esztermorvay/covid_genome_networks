@@ -86,20 +86,22 @@ def get_similarity_scores_subprocess(combinations_info):
             sequence2, counts[file_name2] = get_longest_sequence_from_fasta(temp2 + fna_file)
             score = get_similarity_score(sequence1, sequence2)
             end_time = time.time()
-            print("time to get similarity score: " + str(end_time - start_time))
+
+            # print("time to get similarity score: " + str(end_time - start_time))
             # key = (file_name1, file_name2)
             key = file_name1 + "_" + file_name2
             # print(key, ":", score)
             results[key] = score
             # FOR DEBUGGING ONLY
-            break
             # return
         except Exception as e:
             continue
+    print("done with thread " + str(thread_num))
     with open("counts/" + log_file_name, "w") as counts_file:
         json.dump(counts, counts_file, indent=4)
     with open("scores/" + log_file_name, "w") as counts_file:
         json.dump(results, counts_file, indent=4)
+    print("done writing to file for thread " + str(thread_num))
 
 
 def run_multithreading(group1name, group2name, num_threads=4):
