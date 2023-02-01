@@ -1,6 +1,6 @@
 name: eszter
 dependencies:
-  - python=3.9
-  - bio=1.5.2
-  - biopython=1.79
-  - networkx=2.8.8
+  - python
+  - bio
+  - biopython
+  - networkx
