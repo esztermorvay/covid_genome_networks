@@ -100,10 +100,10 @@ def get_similarity_scores_subprocess(combinations_info):
 
 def run_multithreading(group1name, group2name):
     to_process = get_subgroups(group1name, group2name)
-    # with Pool(4) as p:
-    #     p.map(get_similarity_scores_subprocess, to_process)
-    with Pool(2) as p:
+    with Pool(4) as p:
         p.map(get_similarity_scores_subprocess, to_process)
+    # with Pool(2) as p:
+    #     p.map(get_similarity_scores_subprocess, to_process)
 
 
 def get_subgroups(group1name, group2name):
