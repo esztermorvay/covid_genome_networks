@@ -96,6 +96,8 @@ def get_similarity_scores_subprocess(combinations_info):
             # FOR DEBUGGING ONLY
             # return
         except Exception as e:
+            print("Exception occured in thread " + str(thread_num))
+            print(traceback.format_exc())
             continue
     print("done with thread " + str(thread_num))
     with open("counts/" + log_file_name, "w") as counts_file:
