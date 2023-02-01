@@ -6,3 +6,4 @@ __pycache__/graph_visualizer.cpython-39.pyc
 util_files/__pycache__/plotting_config.cpython-39.pyc
 .idea/misc.xml
 .idea/misc.xml
+util_files/lineage_data.full.json
