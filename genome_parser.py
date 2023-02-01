@@ -126,8 +126,12 @@ def get_subgroups(group1name, group2name, num_threads=4):
     # divide the total amount of combinations into num_threads
     interval_size = len(combinations)//num_threads
     to_process = []
+    last_interval = 0
     for i in range(num_threads):
         to_process.append((i+1, group1name, group2name, combinations[i*interval_size:(i+1)*interval_size]))
+        last_interval = (i+1)*interval_size
+    if last_interval < len(combinations) - 1:
+        to_process.append((num_threads+1, group1name, group2name, combinations[last_interval:]))
     # interval_size = len(combinations)//4
     # to_process2 = [(1,group1name, group2name, combinations[0:interval_size]), (2,group1name, group2name, combinations[interval_size:2*interval_size]),
     #               (3,group1name, group2name, combinations[2*interval_size:3*interval_size]), (4,group1name, group2name, combinations[3*interval_size:])]
