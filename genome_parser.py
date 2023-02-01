@@ -61,7 +61,7 @@ def get_similarity_scores_subprocess(combinations_info):
     # inititialize a list of empty strings with size length
     counts = {}
     results = {}
-    benchmark = 5
+    benchmark = 50
     counter = 0
     for combination in combinations:
         counter += 1
@@ -135,6 +135,7 @@ def get_subgroups(group1name, group2name, num_threads=4):
         last_interval = (i+1)*interval_size
     if last_interval < len(combinations) - 1:
         to_process.append((num_threads+1, group1name, group2name, combinations[last_interval:]))
+    print(len(to_process))
     # interval_size = len(combinations)//4
     # to_process2 = [(1,group1name, group2name, combinations[0:interval_size]), (2,group1name, group2name, combinations[interval_size:2*interval_size]),
     #               (3,group1name, group2name, combinations[2*interval_size:3*interval_size]), (4,group1name, group2name, combinations[3*interval_size:])]
