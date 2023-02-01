@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import zipfile
 from Bio import SeqIO
@@ -93,20 +94,21 @@ def get_similarity_scores_subprocess(combinations_info):
         except Exception as e:
             continue
     with open("counts/" + log_file_name, "w") as counts_file:
-        json.dump(counts, counts_file)
+        json.dump(counts, counts_file, indent=4)
     with open("scores/" + log_file_name, "w") as counts_file:
-        json.dump(results, counts_file)
+        json.dump(results, counts_file, indent=4)
 
 
-def run_multithreading(group1name, group2name):
-    to_process = get_subgroups(group1name, group2name)
-    with Pool(4) as p:
+def run_multithreading(group1name, group2name, num_threads=4):
+    to_process = get_subgroups(group1name, group2name, num_threads=num_threads)
+    with Pool(num_threads) as p:
         p.map(get_similarity_scores_subprocess, to_process)
     # with Pool(2) as p:
     #     p.map(get_similarity_scores_subprocess, to_process)
 
 
-def get_subgroups(group1name, group2name):
+def get_subgroups(group1name, group2name, num_threads=4):
+    """ return thread name"""
     # open the file corresponding to the combinations we need to do
     file_name = "util_files/combinations/" + group1name
     if group2name != group1name:
@@ -116,19 +118,58 @@ def get_subgroups(group1name, group2name):
     combinations = []
     with open(file_name, "r") as f:
         combinations = json.load(f)
-    # divide the total amount of combinations into 4
-    interval_size = len(combinations)//4
-    to_process = [(1,group1name, group2name, combinations[0:interval_size]), (2,group1name, group2name, combinations[interval_size:2*interval_size]),
-                  (3,group1name, group2name, combinations[2*interval_size:3*interval_size]), (4,group1name, group2name, combinations[3*interval_size:])]
+    # divide the total amount of combinations into num_threads
+    interval_size = len(combinations)//num_threads
+    to_process = []
+    for i in range(num_threads):
+        to_process.append((i+1, group1name, group2name, combinations[i*interval_size:(i+1)*interval_size]))
+    # interval_size = len(combinations)//4
+    # to_process2 = [(1,group1name, group2name, combinations[0:interval_size]), (2,group1name, group2name, combinations[interval_size:2*interval_size]),
+    #               (3,group1name, group2name, combinations[2*interval_size:3*interval_size]), (4,group1name, group2name, combinations[3*interval_size:])]
     return to_process
 def main():
+    """
+    USAGE
+    python3 genome_parser.py [num_threads]
+
+
+    :return:
+    """
+
+    # get commad line arg
+    numthreads = int(sys.argv[1])
     # testing
     # util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.13.1.zip", "temp1")
     # util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.1.15.zip", "temp2")
     #
     # se1 = get_longest_sequence_from_fasta("temp1/ncbi_dataset/data/genomic.fna")
     # se2 = get_longest_sequence_from_fasta("temp2/ncbi_dataset/data/genomic.fna")
-    run_multithreading("group8", "group9")
+    # load the combinations file
+    with open("util_files/combinations.json", "r") as f:
+        combinations_done = json.load(f)
+
+    group1name = ""
+    group2name = ""
+    current = ""
+    # get the next combination which is false
+    for combination in combinations_done:
+        if not combinations_done[combination]:
+            current = combination
+            groups = combination.split("_")
+            group1name = groups[0]
+            group2name = groups[1]
+            break
+    if group1name == "":
+        print("all combinations done")
+        return
+    run_multithreading(group1name, group2name, numthreads)
+    # update the combinations file
+    combinations_done[current] = True
+    with open("util_files/combinations.json", "w") as f:
+        json.dump(combinations_done, f, indent=4)
+
+
+
 
 
 def orig_function():
