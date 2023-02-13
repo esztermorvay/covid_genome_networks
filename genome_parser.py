@@ -53,7 +53,7 @@ def remove_empty_files(file_names, dir):
             os.remove(file_path)
             print("removed " + file_name)
 
-def get_similarity_scores_subprocess(combinations_info):
+def get_similarity_scores_subprocess(combinations_info, debugging=False):
     # tuple of thread_num, combinations
     thread_num, group1name, group2name, combinations = combinations_info
     print("thread " + str(thread_num) + " started")
@@ -63,16 +63,18 @@ def get_similarity_scores_subprocess(combinations_info):
     results = {}
     benchmark = 50
     counter = 0
-    logging = thread_num == 1
+    # logging = thread_num == 1
+    logging = debugging
     if logging:
         print("logging for thread " + str(thread_num), len(combinations))
     for combination in combinations:
         counter += 1
         if counter % benchmark == 0 or counter == len(combinations):
-            with open("counts/" + log_file_name, "w") as counts_file:
-                json.dump(counts, counts_file)
-            with open("scores/" + log_file_name, "w") as counts_file:
-                json.dump(results, counts_file)
+            if not debugging:
+                with open("counts/" + log_file_name, "w") as counts_file:
+                    json.dump(counts, counts_file)
+                with open("scores/" + log_file_name, "w") as counts_file:
+                    json.dump(results, counts_file)
             print("combination " + str(thread_num) + " " + str(counter) + "/" + str(len(combinations)), 100*counter/len(combinations), "% done")
         file_name1 = combination[0][11:-4]
         file_name2 = combination[1][11:-4]
@@ -105,14 +107,15 @@ def get_similarity_scores_subprocess(combinations_info):
             # FOR DEBUGGING ONLY
             # return
         except Exception as e:
-            print("Exception occured in thread " + str(thread_num))
+            print("Exception occured in thread " + str(thread_num), combination)
             print(traceback.format_exc())
             continue
     print("done with thread " + str(thread_num))
-    with open("counts/" + log_file_name, "w") as counts_file:
-        json.dump(counts, counts_file, indent=4)
-    with open("scores/" + log_file_name, "w") as counts_file:
-        json.dump(results, counts_file, indent=4)
+    if not debugging:
+        with open("counts/" + log_file_name, "w") as counts_file:
+            json.dump(counts, counts_file, indent=4)
+        with open("scores/" + log_file_name, "w") as counts_file:
+            json.dump(results, counts_file, indent=4)
     print("done writing to file for thread " + str(thread_num))
     return 0
 
@@ -159,7 +162,7 @@ def main():
 
     :return:
     """
-
+    # test()
     # get commad line arg
     numthreads = int(sys.argv[1])
     # testing
@@ -195,7 +198,10 @@ def main():
         json.dump(combinations_done, f, indent=4)
 
 
-
+def test():
+    to_test = [['SARS-CoV-2-A.1.zip', 'SARS-CoV-2-AY.116.zip'], ['SARS-CoV-2-A.1.zip', 'SARS-CoV-2-AY.117.zip'], ['SARS-CoV-2-A.1.zip', 'SARS-CoV-2-AY.118.zip']]
+    com_info = (1, "SARS-CoV-2", "SARS-CoV-2", to_test)
+    get_similarity_scores_subprocess(com_info, debugging=True)
 
 
 def orig_function():
