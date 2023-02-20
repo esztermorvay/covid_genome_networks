@@ -57,11 +57,11 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
     # tuple of thread_num, combinations
     thread_num, group1name, group2name, combinations = combinations_info
     print("thread " + str(thread_num) + " started")
-    log_file_name = group1name + group2name + "_thread" +  str(thread_num) + ".json"
+    log_file_name = group1name + "_" + group2name + "_thread" +  str(thread_num) + ".json"
     # inititialize a list of empty strings with size length
     counts = {}
     results = {}
-    benchmark = 50
+    benchmark = 5
     counter = 0
     # logging = thread_num == 1
     logging = debugging
@@ -75,7 +75,9 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
                     json.dump(counts, counts_file)
                 with open("scores/" + log_file_name, "w") as counts_file:
                     json.dump(results, counts_file)
-            print("combination " + str(thread_num) + " " + str(counter) + "/" + str(len(combinations)), 100*counter/len(combinations), "% done")
+            # print current timestamp as str
+            print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+            print("\tcombination " + str(thread_num) + " " + str(counter) + "/" + str(len(combinations)), 100*counter/len(combinations), "% done")
         file_name1 = combination[0][11:-4]
         file_name2 = combination[1][11:-4]
         file_path1 = zips_dir + "/" + combination[0]
@@ -189,6 +191,11 @@ def main():
     if group1name == "":
         print("all combinations done")
         return
+    print("starting with " + current)
+
+    combinations_done[current] = True
+    with open("util_files/combinations.json", "w") as f:
+        json.dump(combinations_done, f, indent=4)
     run_multithreading(group1name, group2name, numthreads)
 
     print("Done with multithreading for " + current + "")
@@ -199,7 +206,7 @@ def main():
 
 
 def test():
-    to_test = [['SARS-CoV-2-A.1.zip', 'SARS-CoV-2-AY.116.zip'], ['SARS-CoV-2-A.1.zip', 'SARS-CoV-2-AY.117.zip'], ['SARS-CoV-2-A.1.zip', 'SARS-CoV-2-AY.118.zip']]
+    to_test = [['SARS-CoV-2-AY.117.zip', 'SARS-CoV-2-AY.4.7.zip']]
     com_info = (1, "SARS-CoV-2", "SARS-CoV-2", to_test)
     get_similarity_scores_subprocess(com_info, debugging=True)
 
