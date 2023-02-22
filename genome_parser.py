@@ -83,8 +83,8 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
         file_path1 = zips_dir + "/" + combination[0]
         file_path2 = zips_dir + "/" + combination[1]
         try:
-            temp1 = "temp" + str(thread_num)
-            temp2 = "temp" + str(thread_num*10)
+            temp1 = "temp" + group1name + group2name +  str(thread_num)
+            temp2 = "temp" + group1name + group2name + str(thread_num*100)
             util.extract_file_from_zip(file_path1, temp1)
             util.extract_file_from_zip(file_path2, temp2)
             # time how long this takes
