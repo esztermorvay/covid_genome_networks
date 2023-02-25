@@ -72,9 +72,9 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
         if counter % benchmark == 0 or counter == len(combinations):
             if not debugging:
                 with open("counts/" + log_file_name, "w") as counts_file:
-                    json.dump(counts, counts_file)
+                    json.dump(counts, counts_file, indent=4)
                 with open("scores/" + log_file_name, "w") as counts_file:
-                    json.dump(results, counts_file)
+                    json.dump(results, counts_file, indent=4)
             # print current timestamp as str
             print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
             print("\tcombination " + str(thread_num) + " " + str(counter) + "/" + str(len(combinations)), 100*counter/len(combinations), "% done")
