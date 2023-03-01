@@ -159,7 +159,7 @@ def get_subgroups(group1name, group2name, num_threads=4):
 def main():
     """
     USAGE
-    python3 genome_parser.py [num_threads]
+    python3 genome_parser.py [num_threads] [optional: combination to do]
 
 
     :return:
@@ -167,6 +167,9 @@ def main():
     # test()
     # get commad line arg
     numthreads = int(sys.argv[1])
+    combination = None
+    if len(sys.argv) > 2:
+        combination = sys.argv[2]
     # testing
     # util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.13.1.zip", "temp1")
     # util.extract_file_from_zip("genomes/SARS-CoV-2-BA.1.1.15.zip", "temp2")
@@ -180,14 +183,21 @@ def main():
     group1name = ""
     group2name = ""
     current = ""
-    # get the next combination which is false
-    for combination in combinations_done:
-        if not combinations_done[combination]:
-            current = combination
-            groups = combination.split("_")
-            group1name = groups[0]
-            group2name = groups[1]
-            break
+    if combination is not None:
+        current = combination
+        groups = combination.split("_")
+        group1name = groups[0]
+        group2name = groups[1]
+
+    else:
+        # get the next combination which is false
+        for combination in combinations_done:
+            if not combinations_done[combination]:
+                current = combination
+                groups = combination.split("_")
+                group1name = groups[0]
+                group2name = groups[1]
+                break
     if group1name == "":
         print("all combinations done")
         return
