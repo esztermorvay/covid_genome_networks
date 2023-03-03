@@ -36,12 +36,13 @@
     "group5_group9": true,
     "group6_group6": true,
     "group6_group7": true,
-    "group6_group8": false,
+    "group6_group8": true,
     "group6_group9": false,
-    "group7_group7": false,
+    "group7_group7": true,
     "group7_group8": false,
     "group7_group9": false,
     "group8_group8": false,
     "group8_group9": false,
-    "group9_group9": true
+    "group9_group9": true,
+    "grou7_group7": true
 }
