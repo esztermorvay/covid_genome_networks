@@ -73,7 +73,7 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
             if not debugging:
                 with open("garbage_collection/counts/" + log_file_name, "w") as counts_file:
                     json.dump(counts, counts_file, indent=4)
-                with open("gabage_collection/scores/" + log_file_name, "w") as counts_file:
+                with open("garbage_collection/scores/" + log_file_name, "w") as counts_file:
                     json.dump(results, counts_file, indent=4)
             # print current timestamp as str
             print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
