@@ -71,9 +71,9 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
         counter += 1
         if counter % benchmark == 0 or counter == len(combinations):
             if not debugging:
-                with open("counts/" + log_file_name, "w") as counts_file:
+                with open("garbage_collection/counts/" + log_file_name, "w") as counts_file:
                     json.dump(counts, counts_file, indent=4)
-                with open("scores/" + log_file_name, "w") as counts_file:
+                with open("gabage_collection/scores/" + log_file_name, "w") as counts_file:
                     json.dump(results, counts_file, indent=4)
             # print current timestamp as str
             print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
@@ -114,9 +114,9 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
             continue
     print("done with thread " + str(thread_num))
     if not debugging:
-        with open("counts/" + log_file_name, "w") as counts_file:
+        with open("garbage_collection/counts/" + log_file_name, "w") as counts_file:
             json.dump(counts, counts_file, indent=4)
-        with open("scores/" + log_file_name, "w") as counts_file:
+        with open("garbage_collection/scores/" + log_file_name, "w") as counts_file:
             json.dump(results, counts_file, indent=4)
     print("done writing to file for thread " + str(thread_num))
     return 0
@@ -131,10 +131,10 @@ def run_multithreading(group1name, group2name, num_threads=4):
     #     p.map(get_similarity_scores_subprocess, to_process)
 
 
-def get_subgroups(group1name, group2name, num_threads=4):
+def get_subgroups(group1name, group2name, num_threads=4, directory="garbage_collection/combinations/"):
     """ return thread name"""
     # open the file corresponding to the combinations we need to do
-    file_name = "util_files/combinations/" + group1name
+    file_name = directory + group1name
     if group2name != group1name:
         file_name += group2name
     file_name += ".json"
@@ -177,7 +177,7 @@ def main():
     # se1 = get_longest_sequence_from_fasta("temp1/ncbi_dataset/data/genomic.fna")
     # se2 = get_longest_sequence_from_fasta("temp2/ncbi_dataset/data/genomic.fna")
     # load the combinations file
-    with open("util_files/combinations.json", "r") as f:
+    with open("garbage_collection/combinations.json", "r") as f:
         combinations_done = json.load(f)
 
     group1name = ""
@@ -204,14 +204,14 @@ def main():
     print("starting with " + current)
 
     combinations_done[current] = True
-    with open("util_files/combinations.json", "w") as f:
+    with open("garbage_collection/combinations.json", "w") as f:
         json.dump(combinations_done, f, indent=4)
     run_multithreading(group1name, group2name, numthreads)
 
     print("Done with multithreading for " + current + "")
     # update the combinations file
     combinations_done[current] = True
-    with open("util_files/combinations.json", "w") as f:
+    with open("garbage_collection/combinations.json", "w") as f:
         json.dump(combinations_done, f, indent=4)
 
 
@@ -303,6 +303,7 @@ def orig_function():
     # get_similarity_score(t1, t2)
 
     # print(file_names)
+
 
 
 if __name__ == "__main__":

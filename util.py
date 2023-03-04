@@ -6,7 +6,8 @@ import json
 util_dir = "util_files"
 graphs_dir = "graphs/"
 gml_dir = "gml_files"
-
+scores_dir = "scores/"
+combinations_dir = util_dir + "/combinations/"
 computer_using = "lenovo_laptop"
 groups_to_use = [1,2,3]
 if computer_using == "lenovo_laptop":
@@ -100,4 +101,102 @@ def get_combos_btwn_groups(group1, group2=None):
                 combo = [group,other]
                 output.append(combo)
     return output
+
+def get_incomplete_files():
+    files = get_all_files_in_dir_as_list(combinations_dir)
+    done = {}
+    score_files = get_all_files_in_dir_as_list(scores_dir)
+    for file in files:
+        with open(combinations_dir + file, 'r') as f:
+            data = json.load(f)
+            for pair in data:
+                node1 = pair[0][11:-4]
+                node2 = pair[1][11:-4]
+                key = node1 + "_" + node2
+                done[key] = False
+         # get the corresponding group
+        file = file[:-5]
+        group1_name = file[:6]
+        if len(file) > 6:
+            group2_name = file[6:]
+        else:
+            group2_name = group1_name
+        group = group1_name + "_" + group2_name
+        # get the corresponding files from scores
+        for score_file in score_files:
+            if group in score_file:
+                try:
+                    with open(scores_dir + score_file, 'r') as f:
+                        data = json.load(f)
+                        for key in data:
+                            done[key] = True
+                except:
+                    print("error with file: ", score_file)
+    # get the keys that are false
+    incomplete = []
+    for key in done:
+        if not done[key]:
+            incomplete.append(key)
+    incomplete_reversed = []
+    for key in incomplete:
+        node1 = key.split("_")[0]
+        node2 = key.split("_")[1]
+        incomplete_reversed.append(node2 + "_" + node1)
+    # check if any of the ones in incomplete reversed are in done
+    # for key in incomplete_reversed:
+    #     if key in done:
+    #         if done[key]:
+    #             incomplete.remove(key)
+
+    return incomplete
+    # "SARS-CoV-2-" + name + ".zip"
+
+def create_incomplete_combos(incomplete):
+    incomplete_combos = []
+    for key in incomplete:
+        node1 = key.split("_")[0]
+        node2 = key.split("_")[1]
+        name1 = "SARS-CoV-2-" + node1 + ".zip"
+        name2 = "SARS-CoV-2-" + node2 + ".zip"
+        incomplete_combos.append([name1, name2])
+    return incomplete_combos
+
+def create_files_from_combos(num_files, combos):
+    # divide combos into num_fies lists
+    # create a file for each list
+    # return a list of the file names
+    groups = []
+
+    size = num_files
+    start_slice = 0
+    end_slice = size
+    groups = []
+    while (start_slice < len(combos)):
+        if end_slice > len(combos):
+            end_slice = len(combos)
+        groups.append(combos[start_slice:end_slice])
+        start_slice += size
+        end_slice += size
+    # check the size of groups
+    total_size = 0
+    i = 1
+    for group in groups:
+        total_size += len(group)
+        # save it in the garbage collection dir
+        name = "group" + str(i) + ".json"
+        with open(f"garbage_collection/combinations/{name}", "w") as f:
+            json.dump(group, f, indent=4)
+        i += 1
+    if total_size != len(combos):
+        print("error in create_files_from_combos")
+    return groups
+
+def main():
+    incomplete = get_incomplete_files()
+    incomplete_combos = create_incomplete_combos(incomplete)
+    create_files_from_combos(len(incomplete_combos)//8, incomplete_combos)
+
+
+if __name__ == "__main__":
+    main()
 
