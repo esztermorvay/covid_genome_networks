@@ -1,7 +1,7 @@
 {
     "group1_group1": true,
-    "group2_group2": false,
-    "group3_group3": false,
+    "group2_group2": true,
+    "group3_group3": true,
     "group4_group4": false,
     "group5_group5": false,
     "group6_group6": false,
