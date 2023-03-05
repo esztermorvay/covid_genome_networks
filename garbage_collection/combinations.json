@@ -2,9 +2,9 @@
     "group1_group1": true,
     "group2_group2": true,
     "group3_group3": true,
-    "group4_group4": false,
-    "group5_group5": false,
-    "group6_group6": false,
+    "group4_group4": true,
+    "group5_group5": true,
+    "group6_group6": true,
     "group7_group7": false,
     "group8_group8": false,
     "group9_group9": false
