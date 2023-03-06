@@ -71,9 +71,9 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
         counter += 1
         if counter % benchmark == 0 or counter == len(combinations):
             if not debugging:
-                with open("garbage_collection/counts/" + log_file_name, "w") as counts_file:
+                with open("garbage_collection2/counts/" + log_file_name, "w") as counts_file:
                     json.dump(counts, counts_file, indent=4)
-                with open("garbage_collection/scores/" + log_file_name, "w") as counts_file:
+                with open("garbage_collection2/scores/" + log_file_name, "w") as counts_file:
                     json.dump(results, counts_file, indent=4)
             # print current timestamp as str
             print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
@@ -114,9 +114,9 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
             continue
     print("done with thread " + str(thread_num))
     if not debugging:
-        with open("garbage_collection/counts/" + log_file_name, "w") as counts_file:
+        with open("garbage_collection2/counts/" + log_file_name, "w") as counts_file:
             json.dump(counts, counts_file, indent=4)
-        with open("garbage_collection/scores/" + log_file_name, "w") as counts_file:
+        with open("garbage_collection2/scores/" + log_file_name, "w") as counts_file:
             json.dump(results, counts_file, indent=4)
     print("done writing to file for thread " + str(thread_num))
     return 0
@@ -131,7 +131,7 @@ def run_multithreading(group1name, group2name, num_threads=4):
     #     p.map(get_similarity_scores_subprocess, to_process)
 
 
-def get_subgroups(group1name, group2name, num_threads=4, directory="garbage_collection/combinations/"):
+def get_subgroups(group1name, group2name, num_threads=4, directory="garbage_collection2/combinations/"):
     """ return thread name"""
     # open the file corresponding to the combinations we need to do
     file_name = directory + group1name
@@ -203,16 +203,16 @@ def main():
         return
     print("starting with " + current)
 
-    combinations_done[current] = True
-    with open("garbage_collection/combinations.json", "w") as f:
-        json.dump(combinations_done, f, indent=4)
+    # combinations_done[current] = True
+    # with open("garbage_collection/combinations.json", "w") as f:
+    #     json.dump(combinations_done, f, indent=4)
     run_multithreading(group1name, group2name, numthreads)
 
     print("Done with multithreading for " + current + "")
     # update the combinations file
-    combinations_done[current] = True
-    with open("garbage_collection/combinations.json", "w") as f:
-        json.dump(combinations_done, f, indent=4)
+    # combinations_done[current] = True
+    # with open("garbage_collection/combinations.json", "w") as f:
+    #     json.dump(combinations_done, f, indent=4)
 
 
 def test():
