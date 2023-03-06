@@ -71,9 +71,9 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
         counter += 1
         if counter % benchmark == 0 or counter == len(combinations):
             if not debugging:
-                with open("garbage_collection2/counts/" + log_file_name, "w") as counts_file:
+                with open("garbage_collection3/counts/" + log_file_name, "w") as counts_file:
                     json.dump(counts, counts_file, indent=4)
-                with open("garbage_collection2/scores/" + log_file_name, "w") as counts_file:
+                with open("garbage_collection3/scores/" + log_file_name, "w") as counts_file:
                     json.dump(results, counts_file, indent=4)
             # print current timestamp as str
             print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
@@ -114,9 +114,9 @@ def get_similarity_scores_subprocess(combinations_info, debugging=False):
             continue
     print("done with thread " + str(thread_num))
     if not debugging:
-        with open("garbage_collection2/counts/" + log_file_name, "w") as counts_file:
+        with open("garbage_collection3/counts/" + log_file_name, "w") as counts_file:
             json.dump(counts, counts_file, indent=4)
-        with open("garbage_collection2/scores/" + log_file_name, "w") as counts_file:
+        with open("garbage_collection3/scores/" + log_file_name, "w") as counts_file:
             json.dump(results, counts_file, indent=4)
     print("done writing to file for thread " + str(thread_num))
     return 0
@@ -149,13 +149,13 @@ def get_subgroups(group1name, group2name, num_threads=4, directory="garbage_coll
     for i in range(num_threads):
         to_process.append((i+1, group1name, group2name, combinations[i*interval_size:(i+1)*interval_size]))
         # last_interval = (i+1)*interval_size
-    # if last_interval < len(combinations) - 1:
-    #     to_process.append((num_threads+1, group1name, group2name, combinations[last_interval:]))
-    # print(len(to_process))
-    # interval_size = len(combinations)//4
-    # to_process2 = [(1,group1name, group2name, combinations[0:interval_size]), (2,group1name, group2name, combinations[interval_size:2*interval_size]),
-    #               (3,group1name, group2name, combinations[2*interval_size:3*interval_size]), (4,group1name, group2name, combinations[3*interval_size:])]
+
     return to_process
+
+def run_single_thread(combinations_file):
+    with open(combinations_file, "r") as f:
+        combinations = json.load(f)
+    get_similarity_scores_subprocess((1, "group1", "group1", combinations))
 def main():
     """
     USAGE
@@ -164,6 +164,8 @@ def main():
 
     :return:
     """
+    run_single_thread("garbage_collection3/combinations/group1.json")
+    return 0
     # test()
     # get commad line arg
     numthreads = int(sys.argv[1])

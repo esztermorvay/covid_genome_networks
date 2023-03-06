@@ -8,8 +8,8 @@ graphs_dir = "graphs/"
 gml_dir = "gml_files"
 # scores_dir = "scores/"
 # combinations_dir = util_dir + "/combinations/"
-scores_dir = "garbage_collection/scores/"
-combinations_dir = "garbage_collection/combinations/"
+scores_dir = "garbage_collection2/scores/"
+combinations_dir = "garbage_collection2/combinations/"
 computer_using = "lenovo_laptop"
 groups_to_use = [1,2,3]
 if computer_using == "lenovo_laptop":
@@ -186,7 +186,7 @@ def create_files_from_combos(num_files, combos):
         total_size += len(group)
         # save it in the garbage collection dir
         name = "group" + str(i) + ".json"
-        with open(f"garbage_collection2/combinations/{name}", "w") as f:
+        with open(f"garbage_collection3/combinations/{name}", "w") as f:
             json.dump(group, f, indent=4)
         i += 1
     if total_size != len(combos):
