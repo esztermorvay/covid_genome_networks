@@ -3,3 +3,7 @@ dependencies:
   - python
   - biopython
   - networkx
+  - pandas
+  - matplotlib
+  - seaborn
+  - sklearn
