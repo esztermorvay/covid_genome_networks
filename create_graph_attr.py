@@ -133,8 +133,8 @@ def main():
 
         print("Done n adding nfd")
 
-        FDC(graph2, weight="weight")
-        nx.write_gml(graph2, "full_graph/gml_files/graph_inversed_thresholded" + str(threshold) + ".gml")
+        # FDC(graph2, weight="weight")
+        # nx.write_gml(graph2, "full_graph/gml_files/graph_inversed_thresholded" + str(threshold) + ".gml")
 
         print("Done n adding fdc")
         graph = set_forman(graph2)
