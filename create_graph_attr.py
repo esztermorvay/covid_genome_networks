@@ -81,7 +81,7 @@ def add_variant_of_concern(graph, pango_to_name):
     :return:
     """
     # iterate through the nodes in the graph
-    interval = 100
+    interval = 300
     count = 0
     for node in graph.nodes:
         graph.nodes[node]['variant_of_concern'] = False
@@ -113,6 +113,7 @@ def main():
     graph2 = set_inverse_weights(graph)
     threshold_values = [.01, .03, .05, .1, 1]
     for threshold in threshold_values:
+        print("Starting thresholding at " + str(threshold))
         thresholding_low(graph2, threshold)
         # print("Done normalizing edges and counts")
         set_degree_centrality(graph2)
@@ -137,9 +138,9 @@ def main():
         # nx.write_gml(graph2, "full_graph/gml_files/graph_inversed_thresholded" + str(threshold) + ".gml")
 
         print("Done n adding fdc")
-        graph = set_forman(graph2)
-        nx.write_gml(graph2, "full_graph/gml_files/graph_inversed_thresholded" + str(threshold) + ".gml")
-        print("Done adding forman")
+        # graph = set_forman(graph2)
+        # nx.write_gml(graph2, "full_graph/gml_files/graph_inversed_thresholded" + str(threshold) + ".gml")
+        # print("Done adding forman")
         set_cluster_coeffs(graph2)
         print("Done adding clustering")
         # do community detection here
