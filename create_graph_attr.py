@@ -4,7 +4,7 @@ import networkx as nx
 import util
 import pandas as pd
 
-from graph_visualizer import draw_graph
+# from graph_visualizer import draw_graph
 from set_attr_util import *
 # TODO normalize
 # TODO invert
