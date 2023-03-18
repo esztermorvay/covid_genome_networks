@@ -8,8 +8,8 @@ graphs_dir = "graphs/"
 gml_dir = "gml_files"
 # scores_dir = "scores/"
 # combinations_dir = util_dir + "/combinations/"
-scores_dir = "garbage_collection2/scores/"
-combinations_dir = "garbage_collection2/combinations/"
+scores_dir = "garbage_collection3/scores/"
+combinations_dir = "garbage_collection3/combinations/"
 computer_using = "lenovo_laptop"
 groups_to_use = [1,2,3]
 if computer_using == "lenovo_laptop":
@@ -197,7 +197,7 @@ def main():
     incomplete = get_incomplete_files()
     incomplete_combos = create_incomplete_combos(incomplete)
     # create_files_from_combos(len(incomplete_combos)//8, incomplete_combos)
-    create_files_from_combos(len(incomplete_combos), incomplete_combos)
+    # create_files_from_combos(len(incomplete_combos), incomplete_combos)
     print("hi")
 
 if __name__ == "__main__":

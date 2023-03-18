@@ -5,6 +5,7 @@ def draw_graph(G, save_name, clustering_label="variant"):
     """
     A helper function to draw a nx graph with community.
     """
+    plt.clf()
     complex_list = nx.get_node_attributes(G, clustering_label)
 
     le = preprocessing.LabelEncoder()
@@ -15,6 +16,6 @@ def draw_graph(G, save_name, clustering_label="variant"):
                    cmap=plt.cm.rainbow,
                    alpha=0.8)
     plt.legend()
-    plt.savefig("graphs/" + save_name + ".png")
-    plt.show()
+    plt.savefig("full_graph/graphs/" + save_name + ".png")
+    # plt.show()
 

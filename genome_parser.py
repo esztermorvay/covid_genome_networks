@@ -152,6 +152,26 @@ def get_subgroups(group1name, group2name, num_threads=4, directory="garbage_coll
 
     return to_process
 
+
+def get_scores(genome1, genome2):
+    temp1 = "temp1"
+    temp2 = "temp2"
+    file_path1 = zips_dir + "/" + genome1
+    file_path2 = zips_dir + "/" + genome2
+    util.extract_file_from_zip(file_path1, temp1)
+    util.extract_file_from_zip(file_path2, temp2)
+    # time how long this takes
+    start_time = time.time()
+
+    sequence1, count1 = get_longest_sequence_from_fasta(temp1 + fna_file)
+
+    sequence2, count2 = get_longest_sequence_from_fasta(temp2 + fna_file)
+
+    score = get_similarity_score(sequence1, sequence2)
+    print("count 1: " + str(count1))
+    print("count 2: " + str(count2))
+    # print the similarity score
+    print(score)
 def run_single_thread(combinations_file):
     with open(combinations_file, "r") as f:
         combinations = json.load(f)
@@ -164,6 +184,12 @@ def main():
 
     :return:
     """
+    genome1 = "SARS-CoV-2-A.2.5.1.zip"
+    genome2 = "SARS-CoV-2-B.1.1.37.zip"
+    genome3 = "SARS-CoV-2-B.1.1.372.zip"
+    get_scores(genome1, genome2)
+    get_scores(genome1, genome3)
+    return 0
     run_single_thread("garbage_collection3/combinations/group1.json")
     return 0
     # test()
