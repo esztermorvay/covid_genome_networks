@@ -4,7 +4,7 @@ import numpy as np
 # import seaborn as sns
 import math
 import copy
-import community as community_louvain
+# import community as community_louvain
 from GraphRicciCurvature.OllivierRicci import OllivierRicci
 from GraphRicciCurvature.FormanRicci import FormanRicci
 from collections import Counter
