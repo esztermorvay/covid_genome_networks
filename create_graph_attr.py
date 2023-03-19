@@ -111,7 +111,7 @@ def main():
     #
     # graph = nx.read_gml(graph_name)
     graph2 = set_inverse_weights(graph)
-    threshold_values = [.01, .03, .05, .1, 1]
+    threshold_values = [1, .1, .05, .03, .01]
     for threshold in threshold_values:
         print("Starting thresholding at " + str(threshold))
         thresholding_low(graph2, threshold)
