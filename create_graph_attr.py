@@ -110,9 +110,10 @@ def main():
     # graph_name = "full_graph/gml_files/graph_with_voc_normalized.gml"
     #
     # graph = nx.read_gml(graph_name)
-    graph2 = set_inverse_weights(graph)
-    threshold_values = [1, .1, .05, .03, .01]
+    graph3 = set_inverse_weights(graph)
+    threshold_values = [.01, .03, .05, .1, 1]
     for threshold in threshold_values:
+        graph2 = graph3.copy()
         print("Starting thresholding at " + str(threshold))
         thresholding_low(graph2, threshold)
         # print("Done normalizing edges and counts")
