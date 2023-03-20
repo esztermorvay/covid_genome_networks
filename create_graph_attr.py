@@ -145,10 +145,12 @@ def main():
         set_cluster_coeffs(graph2)
         print("Done adding clustering")
         # do community detection here
-        graph2 = set_orc(graph2, "orc_inversed")
+        nx.write_gml(graph2, "full_graph/gml_files/graph_inversed_thresholded" + str(threshold) + ".gml")
+        if threshold < .03:
+            graph2 = set_orc(graph2, "orc_inversed")
 
         nx.write_gml(graph2, "full_graph/gml_files/graph_inversed_thresholded" + str(threshold) + ".gml")
-        print("Done adding orc")
+        # print("Done adding orc")
         # draw_graph(graph2, "graph_inversed_thresholded" + str(threshold), "variant_of_concern")
 
     # count the number of edges with weight 0
