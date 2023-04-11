@@ -10,7 +10,8 @@ def draw_graph(G, save_name, clustering_label="variant"):
 
     le = preprocessing.LabelEncoder()
     node_color = le.fit_transform(list(complex_list.values()))
-
+    # draw with labels
+    # label_dict
     nx.draw_spring(G,nodelist=G.nodes(),
                    node_color=node_color,
                    cmap=plt.cm.rainbow,

@@ -7,9 +7,9 @@ features = ['count', 'variant_of_concern', 'variant', 'count_proportion_to_max',
             'fdc', 'formanCurvature', 'cluster_coeff']
 
 save_dir = "plots/"
-boxplot_save_dir = save_dir + "boxplots/"
-violinplot_save_dir = save_dir + "violinplots/"
-pairplot_save_dir = save_dir + "pairplots/"
+boxplot_save_dir = save_dir + "full_graph/boxplots/"
+violinplot_save_dir = save_dir + "full_graph/violinplots/"
+pairplot_save_dir = save_dir + "full_graph/pairplots/"
 
 if __name__ == "__main__":
     for feature in features:

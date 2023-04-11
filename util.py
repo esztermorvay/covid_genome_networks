@@ -5,7 +5,7 @@ import json
 
 util_dir = "util_files"
 graphs_dir = "graphs/"
-gml_dir = "gml_files"
+gml_dir = "full_graph/gml_files"
 # scores_dir = "scores/"
 # combinations_dir = util_dir + "/combinations/"
 scores_dir = "garbage_collection3/scores/"
