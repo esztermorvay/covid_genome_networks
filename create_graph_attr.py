@@ -187,6 +187,16 @@ def main():
     print('done')
     # thresholding(graph, 0.9)
 
-
+def main2():
+    graph = nx.read_gml("full_graph/gml_files/graph_with_voc_normalized.gml")
+    graph2 = set_inverse_weights(graph)
+    graphs = [graph, graph2]
+    # set the degree centrality, clustering coeff, and riccicurvature
+    for g in graphs:
+        set_degree_centrality(g)
+        set_cluster_coeffs(g)
+        set_orc(g)
+    nx.write_gml(graph, "full_graph/gml_files/fullgraph.gml")
+    nx.write_gml(graph2, "full_graph/gml_files/fullgraph_inverse.gml")
 if __name__ == "__main__":
-    main()
+    main2()

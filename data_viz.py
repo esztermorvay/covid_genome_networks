@@ -34,7 +34,8 @@ def violinplot(df, x_feature=None, y_feature=None,  save_name="", stratifier=Non
 def main():
     gml_files = get_all_files_in_dir_as_list(gml_dir)
     for gml_file in gml_files:
-        if gml_file == "community":
+        ext = gml_file.split(".")[-1]
+        if gml_file == "community" or ext != "gml" or "graph_with_voc_normalized" not in gml_file:
             continue
 
         # make directories within the subdirectories if they dont exist yet
