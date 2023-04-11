@@ -192,10 +192,17 @@ def main2():
     graph2 = set_inverse_weights(graph)
     graphs = [graph, graph2]
     # set the degree centrality, clustering coeff, and riccicurvature
+    i = 0
     for g in graphs:
         set_degree_centrality(g)
+        print("Done adding degree centrality")
         set_cluster_coeffs(g)
+        print("Done adding clustering")
         set_orc(g)
+        print("Done adding orc")
+        nx.write_gml(g, "full_graph/gml_files/fullgraph" + str(i) + ".gml")
+        i += 1
+        print("saved graph" + str(i))
     nx.write_gml(graph, "full_graph/gml_files/fullgraph.gml")
     nx.write_gml(graph2, "full_graph/gml_files/fullgraph_inverse.gml")
 if __name__ == "__main__":
