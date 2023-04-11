@@ -189,7 +189,9 @@ def main():
 
 def main2():
     graph = nx.read_gml("full_graph/gml_files/graph_with_voc_normalized.gml")
+    print("read graph")
     graph2 = set_inverse_weights(graph)
+    print("Got inverses")
     graphs = [graph, graph2]
     # set the degree centrality, clustering coeff, and riccicurvature
     i = 0
