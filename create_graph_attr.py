@@ -1,3 +1,4 @@
+import argparse
 import sys
 
 import networkx as nx
@@ -188,25 +189,36 @@ def main():
     # thresholding(graph, 0.9)
 
 def main2():
-    graph = nx.read_gml("full_graph/gml_files/graph_with_voc_normalized.gml")
-    print("read graph")
-    graph2 = set_inverse_weights(graph)
-    nx.write_gml(graph2, "full_graph/gml_files/fullgraph_inverse.gml")
-    print("Got inverses")
-    graphs = [graph, graph2]
-    # set the degree centrality, clustering coeff, and riccicurvature
-    i = 0
-    for g in graphs:
-        set_degree_centrality(g)
-        print("Done adding degree centrality")
-        set_cluster_coeffs(g)
-        print("Done adding clustering")
-        set_orc(g)
-        print("Done adding orc")
-        nx.write_gml(g, "full_graph/gml_files/fullgraph" + str(i) + ".gml")
-        i += 1
-        print("saved graph" + str(i))
-    nx.write_gml(graph, "full_graph/gml_files/fullgraph.gml")
-    nx.write_gml(graph2, "full_graph/gml_files/fullgraph_inverse.gml")
+    # get CLI arguments
+    inverse = False
+    if len(sys.argv) > 1:
+        inverse = True
+    if inverse:
+        print("inverse")
+        graph = nx.read_gml("full_graph/gml_files/fullgraph_inverse.gml")
+
+    else:
+        graph = nx.read_gml("full_graph/gml_files/graph_with_voc_normalized.gml")
+
+    # print("read graph")
+    # graph2 = set_inverse_weights(graph)
+    # nx.write_gml(graph2, "full_graph/gml_files/fullgraph_inverse.gml")
+    # print("Got inverses")
+    # graphs = [graph, graph2]
+    # # set the degree centrality, clustering coeff, and riccicurvature
+    # i = 0
+    # for g in graphs:
+    graph = set_degree_centrality(graph)
+    print("Done adding degree centrality")
+    # graph = set_cluster_coeffs(graph)
+    print("Done adding clustering")
+    graph = set_orc(graph)
+    print("Done adding orc")
+    if inverse:
+        nx.write_gml(graph, "full_graph/gml_files/fullgraph_inverse.gml")
+    else:
+        nx.write_gml(graph, "full_graph/gml_files/fullgraph.gml")
+
+
 if __name__ == "__main__":
     main2()
