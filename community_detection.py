@@ -23,7 +23,11 @@ def set_ricci_flow_community(G):
 def main():
     # iterate through all the gml files in the gml_files directory
     gml_files = get_all_files_in_dir_as_list(gml_dir)
+    # gml_files = ["graph_with_voc_normalized.gml"]
     for gml_file in gml_files:
+        if "threshold" not in gml_file:
+            continue
+        print(gml_file)
         # load the graph
         G = nx.read_gml(gml_dir + "/" + gml_file)
         # set the louvain communities
@@ -31,7 +35,7 @@ def main():
         # set the ricci flow communities
         # set_ricci_flow_community(G)
         draw_graph(G, "communities" + gml_file, "louvain_community")
-        nx.write_gml(G, gml_dir + "/" + gml_file)
+        nx.write_gml(G, gml_dir + "/community/" + gml_file)
         variants = []
         communities = []
         # iterate through nodes in graph

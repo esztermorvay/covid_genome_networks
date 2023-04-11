@@ -110,6 +110,24 @@ def main():
     # graph_name = "full_graph/gml_files/graph_with_voc_normalized.gml"
     #
     # graph = nx.read_gml(graph_name)
+
+    # add thresholding high for graph
+    threshold_high_values = [.5, .7, .8, .9, .95, .975, .99]
+    for threshold in threshold_high_values:
+        graph2 = graph.copy()
+        print("Starting thresholding at " + str(threshold))
+        thresholding(graph2, threshold)
+        # print("Done normalizing edges and counts")
+        # set_degree_centrality(graph2)
+        # set_closeness_centrality(graph)
+        # nx.write_gml(graph2, "full_graph/gml_files/graph_with_voc_normalized+.gml")
+        nx.write_gml(graph2, "full_graph/gml_files/graph_thresholded_high" + str(threshold) + ".gml")
+        #
+        # print("Done n adding centralities")
+        # # thresholding(graph, 0.9)
+        # set_betweenness_centralities(graph2)
+        # nx.write_gml(graph2, "full_graph/gml_files/graph_normalized_thresholded_high" + str(threshold) + "_with_betweenness.gml")
+    return 0
     graph3 = set_inverse_weights(graph)
     threshold_values = [ .1, 1]
     for threshold in threshold_values:
