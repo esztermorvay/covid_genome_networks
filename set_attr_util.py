@@ -29,7 +29,7 @@ def set_orc(graph, name="orc"):
 
     """
     # get the orc of each node
-    orc = OllivierRicci(graph, alpha=0.5, verbose="TRACE")
+    orc = OllivierRicci(graph, alpha=0.5, verbose="TRACE", cache_maxsize=2000000)
     orc.compute_ricci_curvature()
     # orc_dict = orc.get_ricci_curvature()
     # nx.set_node_attributes(graph, orc_dict, name)
