@@ -12,6 +12,12 @@ def get_t_scores(df):
     # set option to displa all columns
     pd.set_option('display.max_columns', None)
     df = df.copy()
+    # get the number that are variants of concern
+    num_var_concern = df['variant_of_concern'].sum()
+    # get the number that are not variants of concern
+    num_not_var_concern = len(df) - num_var_concern
+    print("Number of variants of concern: ", num_var_concern)
+    print("Number of not variants of concern: ", num_not_var_concern)
     # get the means
     means = df.groupby('variant_of_concern').mean()
     # get the standard deviations

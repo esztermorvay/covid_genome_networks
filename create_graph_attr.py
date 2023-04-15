@@ -198,9 +198,9 @@ def main2():
         graph = nx.read_gml("full_graph/gml_files/fullgraph_inverse.gml")
 
     else:
-        graph = nx.read_gml("full_graph/gml_files/graph_with_voc_normalized.gml")
+        graph = nx.read_gml("full_graph/gml_files/fullgraph.gml")
 
-    # print("read graph")
+    print("read graph")
     # graph2 = set_inverse_weights(graph)
     # nx.write_gml(graph2, "full_graph/gml_files/fullgraph_inverse.gml")
     # print("Got inverses")
@@ -208,16 +208,17 @@ def main2():
     # # set the degree centrality, clustering coeff, and riccicurvature
     # i = 0
     # for g in graphs:
-    graph = set_degree_centrality(graph)
-    print("Done adding degree centrality")
+    # graph = set_degree_centrality(graph)
+    # print("Done adding degree centrality")
     # graph = set_cluster_coeffs(graph)
-    print("Done adding clustering")
+    # print("Done adding clustering")
     graph = set_orc(graph)
     print("Done adding orc")
     if inverse:
-        nx.write_gml(graph, "full_graph/gml_files/fullgraph_inverse.gml")
+        nx.write_gml(graph, "full_graph/gml_files/fullgraph_inverse2.gml")
     else:
-        nx.write_gml(graph, "full_graph/gml_files/fullgraph.gml")
+        nx.write_gml(graph, "full_graph/gml_files/fullgraph2.gml")
+        # pass
 
 
 if __name__ == "__main__":
