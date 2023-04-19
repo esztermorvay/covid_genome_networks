@@ -212,12 +212,15 @@ def main2():
     # print("Done adding degree centrality")
     # graph = set_cluster_coeffs(graph)
     # print("Done adding clustering")
-    graph = set_orc(graph)
-    print("Done adding orc")
+    # graph = set_orc(graph)
+    # print("Done adding orc")
+    graph = set_betweenness_centralities(graph)
+    print("Done adding btwnness centralities")
+    # nx.write_gml(graph, "full_graph/gml_files/fullgraph3.gml")
     if inverse:
         nx.write_gml(graph, "full_graph/gml_files/fullgraph_inverse2.gml")
     else:
-        nx.write_gml(graph, "full_graph/gml_files/fullgraph2.gml")
+        nx.write_gml(graph, "full_graph/gml_files/fullgraph3.gml")
         # pass
 
 
