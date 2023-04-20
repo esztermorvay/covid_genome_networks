@@ -86,9 +86,18 @@ def set_inverse_weights(g):
         g2.edges[edge]['weight'] = 1 - g2.edges[edge]['weight']
     return g2
 
-def set_degree_centrality(g):
-    degree_centrality = nx.degree_centrality(g)
-    nx.set_node_attributes(g, degree_centrality, 'degree_centrality')
+def set_degree_centrality(g, weighted=False):
+    if weighted:
+        degree_sums = dict(g.degree(weight="weight"))
+        # get the max degree
+        max_degree = max(degree_sums.values())
+        # get the degree centrality of each node
+        degree_centrality = {node: degree / max_degree for node, degree in degree_sums.items()}
+        # set the attribute
+        nx.set_node_attributes(g, degree_centrality, 'degree_centrality')
+    else:
+        degree_centrality = nx.degree_centrality(g)
+        nx.set_node_attributes(g, degree_centrality, 'degree_centrality')
     return g
 
 def set_closeness_centrality(g):
